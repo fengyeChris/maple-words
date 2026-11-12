@@ -24,6 +24,7 @@ async function api(path, options = {}) {
 function showToast(message) { toast.textContent = message; toast.classList.add('show'); clearTimeout(showToast.timer); showToast.timer = setTimeout(() => toast.classList.remove('show'), 2300); }
 function esc(value) { return String(value ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])); }
 function layout(content, opts = {}) {
+  document.body.classList.remove('learning-page');
   const title = opts.title || '枫叶单词 · 本地版';
   document.title = title;
   return `<div class="site-header"><div class="shell header-inner"><a class="brand" href="/"><span class="brand-mark"><img src="/assets/maple-icon-192.png" width="38" height="38" alt="" /></span><span class="brand-copy"><strong>枫叶单词</strong><span>每天一词，积叶成林</span></span></a><div class="header-actions"><form class="search-box" id="global-search"><input name="q" placeholder="搜索单词或中文释义" autocomplete="off"/><button>搜索</button></form><a href="/library.html">词书管理</a><a href="/myNotes.html">我的笔记</a><a href="/learningStats.html">学习统计</a><a class="primary" href="/settings.html">设置</a></div></div></div>${content}<div class="footer">枫叶单词 · 本地学习版　支持课程、单词书和学习记录</div>`;
@@ -34,7 +35,11 @@ function bindGlobal() {
 async function getCourses() { if (!state.courses.length) state.courses = await api('/api/courses'); return state.courses; }
 function unitIdFor(course, index) { return course.id * 100 + index + 1; }
 function modeHref(mode, courseId, unitId, review) { const page = { meaning: 'englishToMeaning.html', flash: 'flashCard.html', write: 'writeItInEnglish.html', match: 'wordMatchGame.html' }[mode]; return review ? `/${page}?review=${review.filter}&session=${encodeURIComponent(review.session)}` : `/${page}?course_id=${courseId}&unit_id=${unitId}`; }
-function modeTabs(active, courseId, unitId, review) { return `<div class="mode-tabs">${studyModes.map(([key,label,icon]) => `<a class="${active===key?'active':''}" href="${modeHref(key,courseId,unitId,review)}"><span>${icon}</span> ${label}</a>`).join('')}</div>`; }
+function studyIcon(name){
+  const paths={play:'<circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z"/>',edit:'<path d="m16 3 5 5M4 15 16 3l5 5L9 20l-6 1Z"/>',file:'<path d="M14 3H6v18h13V8Zm0 0v5h5M9 12h7M9 16h7"/>',game:'<path d="M7 6h10c2 0 3 2 3 4l1 7c0 2-2 3-3 1l-2-3H8l-2 3c-1 2-3 1-3-1l1-7c0-2 1-4 3-4Z"/><path d="M8 9v5m-2.5-2.5h5M16 10h.01M18 13h.01"/>',audio:'<path d="M11 5 6 9H3v6h3l5 4ZM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',star:'<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/>',left:'<path d="m15 5-7 7 7 7"/>',right:'<path d="m9 5 7 7-7 7"/>',flip:'<path d="M4 9a8 8 0 1 1 0 6M4 4v5h5"/>',shuffle:'<path d="M3 5h3c5 0 7 14 12 14h3m-4-4 4 4-4 3M3 19h3c2 0 4-3 6-7s4-7 6-7h3m-4-3 4 3-4 4"/>',keyboard:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.1M10 9h.1M14 9h.1M18 9h.1M6 12h.1M10 12h.1M14 12h.1M18 12h.1M7 16h10"/>'};
+  return `<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.file}</svg>`;
+}
+function modeTabs(active, courseId, unitId, review) { return `<nav class="mode-tabs" aria-label="学习模式">${studyModes.map(([key,label]) => `<a class="${active===key?'active':''}" ${active===key?'aria-current="page"':''} href="${modeHref(key,courseId,unitId,review)}">${studyIcon({flash:'play',write:'edit',meaning:'file',match:'game'}[key])}<span>${label}</span></a>`).join('')}</nav>`; }
 function reviewLinks(filter,hasWords){return `<div class="review-modes">${studyModes.map(([mode,label,icon])=>hasWords ? `<a class="btn" data-review-mode="${mode}" href="/${{flash:'flashCard',write:'writeItInEnglish',meaning:'englishToMeaning',match:'wordMatchGame'}[mode]}.html?review=${filter}">${icon} ${label}</a>` : `<button class="btn" disabled>${icon} ${label}</button>`).join('')}</div>`;}
 function bindReviewLinks(words,filter){document.querySelectorAll('[data-review-mode]').forEach(link=>link.onclick=e=>{e.preventDefault();if(!words.length)return;const session=crypto.randomUUID();sessionStorage.setItem('beidanci-review-'+session,JSON.stringify({filter,wordIds:[...new Set(words.map(w=>w.id))]}));location.href=modeHref(link.dataset.reviewMode,null,null,{filter,session});});}
 
@@ -60,6 +65,7 @@ async function library() {
 
 async function loadWords() {
   state.courseId=Number(qs.get('course_id') || 4);state.unitId=Number(qs.get('unit_id') || 154);
+  await getCourses();
   const actions=await api('/api/word-actions');state.actions=Object.fromEntries(actions.map(a=>[String(a.word_id),a]));
   state.review=null;
   if(qs.has('review')){
@@ -75,7 +81,7 @@ async function loadWords() {
     state.review={filter,session};
   }else state.words=await api(`/api/courses/${state.courseId}/units/${state.unitId}/words`);
   state.index=0;state.correct=0;state.wrong=0;state.answered=false;state.selected=null;state.studied=new Set();state.busy=false;
-  state.results=new Map();state.optionWords=[];
+  state.results=new Map();state.optionWords=[];state.orderedWords=[...state.words];state.shuffled=false;
   if(state.review && state.mode==='meaning' && new Set(state.words.map(w=>w.meaning)).size<4){
     const units=new Map(state.words.map(w=>[w.unit_id,w]));
     for(const word of units.values()){
@@ -109,11 +115,27 @@ function syncWordMarks(){
     b.disabled=!word || actionSaves.has(String(word.id));
     b.classList.toggle('active',Boolean(action[b.dataset.mark]));
     b.setAttribute('aria-pressed',String(Boolean(action[b.dataset.mark])));
+    const label=b.querySelector('[data-mark-label]');
+    if(label)label.textContent=action.favorite?'已加星标':'添加星标';
   });
 }
 async function answer(word,ok){state.busy=true;state.studied.add(word.id);state.results.set(word.id,ok);state.correct=[...state.results.values()].filter(Boolean).length;state.wrong=state.results.size-state.correct;const good=document.querySelector('.score-row .good'),bad=document.querySelector('.score-row .bad'),rate=document.querySelectorAll('.score-row strong')[2];if(good)good.textContent=state.correct;if(bad)bad.textContent=state.wrong;if(rate)rate.textContent=Math.round(state.correct*100/(state.correct+state.wrong))+'%';try{await act(word,'unknown',!ok);await recordProgress(word);}finally{state.busy=false;}}
 function shuffled(items){return items.map(x=>({x,r:Math.random()})).sort((a,b)=>a.r-b.r).map(v=>v.x);}
 function makeOptions(word){return shuffled([word.meaning,...shuffled([...new Set([...state.words,...(state.optionWords || [])].filter(w=>w.meaning!==word.meaning).map(w=>w.meaning))]).slice(0,3)]);}
+function nextUnitLink(){
+  if(state.review)return '';
+  const course=state.courses.find(c=>c.id===state.courseId),index=course?.units.findIndex(u=>u.id===state.unitId);
+  const unit=index>=0 ? course.units[index+1] : null;
+  return unit ? `<a class="btn primary next-unit" id="next-unit" href="${modeHref(state.mode,state.courseId,unit.id)}">学习下一单元</a>` : '';
+}
+function studyMarks(){return `<div class="word-marks">${state.mode==='match'?'<p class="mark-target" id="mark-target" role="status"></p>':''}${[['favorite','星标'],['fuzzy','模糊'],['unknown','不认识']].map(([key,label])=>`<button class="icon-btn mark-${key}" data-mark="${key}" aria-pressed="false">${label}</button>`).join('')}</div>`;}
+function flashExample(word){
+  const sentence=word.example_en || '',index=sentence.toLowerCase().indexOf(word.word.toLowerCase());
+  return index<0 ? esc(sentence) : esc(sentence.slice(0,index))+`<strong>${esc(sentence.slice(index,index+word.word.length))}</strong>`+esc(sentence.slice(index+word.word.length));
+}
+function renderFlashCard(word){
+  return `<div class="flash-workspace"><div class="flash-toolbar"><button class="tool-btn" id="restart-study" aria-label="重新过一遍" title="重新过一遍">${studyIcon('flip')}</button><button class="tool-btn ${state.shuffled?'active':''}" id="shuffle-study" aria-label="乱序当前单元" aria-pressed="${!!state.shuffled}" title="乱序当前单元">${studyIcon('shuffle')}</button><button class="tool-btn flip-control" id="show-answer" aria-expanded="true" aria-controls="flash-answer" title="翻转卡片（空格键）">翻转</button><span class="flash-position">第 ${state.index+1} / ${state.words.length} 词</span></div><div class="flash-stage"><article class="study-card flash-card"><button class="favorite-mark" data-mark="favorite" aria-pressed="false">${studyIcon('star')}<span data-mark-label>添加星标</span></button><div class="flash-scroll" tabindex="0" aria-label="单词与释义"><h1 class="word-title" lang="en">${esc(word.word)} <button class="audio-btn" id="audio" aria-label="播放单词发音" title="播放单词发音（R）">${studyIcon('audio')}</button></h1><div id="flash-answer"><p class="flash-definition"><span class="word-phonetic">${esc(word.phonetic || '')}</span> <span class="flash-meaning">${esc(word.meaning)}</span></p>${word.example_en?`<p class="flash-example" lang="en">${flashExample(word)} <button class="audio-btn example-audio" id="example-audio" aria-label="朗读英文例句" title="朗读英文例句">${studyIcon('audio')}</button></p>`:''}${word.example_cn?`<p class="flash-translation">${esc(word.example_cn)}</p>`:''}</div><p id="flash-concealed" class="flash-concealed hidden">释义已隐藏，按空格键或点击「翻转」查看。</p></div><a class="flash-detail" href="/wordDetail.html?word_id=${word.id}" target="_blank" rel="noopener">${studyIcon('edit')} 查看单词详情</a></article><button class="flash-arrow previous-arrow" id="prev" aria-label="上一词" title="上一词（←）" ${state.index===0?'disabled':''}>${studyIcon('left')}</button><button class="flash-arrow next-arrow" id="browse-next" aria-label="下一词" title="下一词（→）">${studyIcon('right')}</button></div><div class="flash-classify"><button class="mark-fuzzy" data-mark="fuzzy" aria-pressed="false">模糊</button><button class="mark-unknown" data-mark="unknown" aria-pressed="false">不认识</button></div>${keyboardHints()}<div class="flash-session-actions"><button class="text-btn" id="know">${flashKnownReview()?'认识，下一词':'认识并继续'}</button>${nextUnitLink()}<button class="text-btn" id="finish">结束练习</button></div></div>`;
+}
 
 function renderStudyPage() {
   document.onkeydown=null;
@@ -122,15 +144,14 @@ function renderStudyPage() {
   if (!word) return finishStudy();
   const opts = state.mode === 'meaning' ? makeOptions(word) : [];
   const action = state.actions[String(word.id)] || {};
-  const center = state.mode === 'meaning' ? `<div class="study-card"><div class="badge">第 ${state.index + 1} / ${state.words.length} 词</div><div><h1 class="word-title">${esc(word.word)} <button class="audio-btn" id="audio">🔊</button></h1><p class="word-phonetic">${esc(word.phonetic || '')}</p><p class="word-pos">${esc(word.pos || '')}</p></div><div class="options">${opts.map((o,i)=>`<button class="option" data-option="${i}">${esc(o)}</button>`).join('')}</div><div class="study-actions"><button class="btn" id="skip">跳过</button><button class="btn primary" id="next" disabled>下一个</button><button class="btn" id="finish">结束测试</button></div></div>` : renderAlternativeMode(word, action);
-  app.innerHTML = `<div class="learning-shell"><div class="learning-nav">${state.review?`<a href="${notesHref(state.review.filter)}">← 返回重点单词</a>`:`<a href="/courseDetail.html?course_id=${courseId}">← 返回单元列表</a>`}<span class="divider"></span><a href="/">⌂ 返回首页</a></div><main class="learning-main">${modeTabs(state.mode, courseId, unitId, state.review)}${state.review?`<p class="review-context">重点单词 · ${filterLabel(state.review.filter)} · 本轮 ${state.words.length} 词</p>`:''}${center}</main><footer class="study-footer"><div class="study-footer-inner"><div class="score-row"><div><span>正确</span><strong class="good">${state.correct}</strong></div><div><span>错误</span><strong class="bad">${state.wrong}</strong></div><div><span>正确率</span><strong>${state.correct + state.wrong ? Math.round(state.correct * 100 / (state.correct + state.wrong)) : 0}%</strong></div></div><div class="study-progress-head"><span>学习进度</span><strong>${state.index}/${state.words.length}</strong></div><div class="progress"><i style="width:${Math.round(state.index * 100 / state.words.length)}%"></i></div></div></footer></div>`;
-  document.querySelector('.study-card').insertAdjacentHTML('beforeend', `<div class="word-marks">${state.mode==='match'?'<p class="mark-target" id="mark-target" role="status"></p>':''}${[['favorite','星标'],['fuzzy','模糊'],['unknown','不认识']].map(([key,label])=>`<button class="icon-btn" data-mark="${key}">${label}</button>`).join('')}</div>`);
-  document.querySelector('.study-card').insertAdjacentHTML('beforeend',keyboardHints());
+  const center = state.mode === 'meaning' ? `<div class="study-card"><div class="badge">第 ${state.index + 1} / ${state.words.length} 词</div><div><h1 class="word-title">${esc(word.word)} <button class="audio-btn" id="audio" aria-label="播放单词发音">${studyIcon('audio')}</button></h1><p class="word-phonetic">${esc(word.phonetic || '')}</p><p class="word-pos">${esc(word.pos || '')}</p></div><div class="options">${opts.map((o,i)=>`<button class="option" data-option="${i}">${esc(o)}</button>`).join('')}</div><div class="study-actions"><button class="btn" id="skip">跳过</button><button class="btn primary" id="next" disabled>下一个</button><button class="btn" id="finish">结束测试</button></div></div>` : renderAlternativeMode(word, action);
+  document.body.classList.add('learning-page');
+  app.innerHTML = `<div class="learning-shell ${state.mode}-page"><main class="learning-main">${modeTabs(state.mode, courseId, unitId, state.review)}${state.review?`<p class="review-context">重点单词 · ${filterLabel(state.review.filter)} · 本轮 ${state.words.length} 词</p>`:''}${center}${state.mode==='flash'?'':studyMarks()+keyboardHints()}</main><footer class="study-footer"><div class="study-footer-inner"><div class="score-row"><div><span>正确</span><strong class="good">${state.correct}</strong></div><div><span>错误</span><strong class="bad">${state.wrong}</strong></div><div><span>正确率</span><strong>${state.correct + state.wrong ? Math.round(state.correct * 100 / (state.correct + state.wrong)) : 0}%</strong></div></div><div class="study-progress"><div class="study-progress-head"><span>本轮进度</span><strong>${state.index}/${state.words.length}</strong></div><div class="progress"><i style="width:${Math.round(state.index * 100 / state.words.length)}%"></i></div></div></div><nav class="learning-nav" aria-label="学习导航">${state.review?`<a href="${notesHref(state.review.filter)}">← 返回重点单词</a>`:`<a href="/courseDetail.html?course_id=${courseId}">← 返回单元列表</a>`}<a href="/">返回首页</a><a href="/myNotes.html">我的笔记</a><span>枫叶单词</span></nav></footer></div>`;
   syncWordMarks();
   bindStudy(word, opts);
 }
 function renderAlternativeMode(word, action) {
-  if (state.mode === 'flash') return `<div class="study-card"><div class="badge">单词快过 · ${state.index + 1}/${state.words.length}</div><h1 class="word-title">${esc(word.word)} <button class="audio-btn" id="audio">🔊</button></h1><p class="word-phonetic">${esc(word.phonetic || '')}</p><div id="flash-answer" class="muted" style="min-height:60px;margin-top:22px">点击显示释义</div><div class="study-actions"><button class="btn" id="prev" ${state.index===0?'disabled':''}>上一词</button><button class="btn" id="show-answer" aria-expanded="false">显示释义</button><button class="btn primary" id="know">认识</button><button class="btn" id="unknown">不认识</button><button class="btn" id="browse-next">下一词</button><button class="btn" id="finish">结束测试</button></div></div>`;
+  if (state.mode === 'flash') return renderFlashCard(word);
   if (state.mode === 'write') return `<div class="study-card"><div class="badge">写出英文 · ${state.index + 1}/${state.words.length}</div><h1 class="word-title" style="font-size:32px">${esc(word.meaning)}</h1><p class="word-phonetic">${esc(word.example_cn || '')}</p><div class="field" style="max-width:560px;margin:24px auto 0"><input id="write-answer" placeholder="输入英文单词" autocomplete="off"/></div><div id="write-result" class="muted" style="min-height:26px"></div><div class="study-actions"><button class="btn" id="write-hint">提示</button><button class="btn primary" id="check-write">检查</button><button class="btn primary" id="next" disabled>下一个</button><button class="btn" id="skip">跳过</button><button class="btn" id="finish">结束测试</button></div></div>`;
   const pairs=state.words.slice(state.index,state.index+4);state.matchPairs=pairs;state.matchMarkId=null;
   return `<div class="study-card"><div class="badge">单词对对碰 · ${state.index+1}/${state.words.length}</div><h1 style="font-size:24px">把英文和释义配对</h1><p class="muted">先选左侧单词，再选右侧释义。</p><div class="match-board"><div>${shuffled(pairs).map(w=>`<button class="option match-tile" data-left="${w.id}">${esc(w.word)}</button>`).join('')}</div><div>${shuffled(pairs).map(w=>`<button class="option match-tile" data-right="${w.id}">${esc(w.meaning)}</button>`).join('')}</div></div><div class="study-actions"><button class="btn" id="skip">跳过这组</button><button class="btn" id="finish">结束测试</button></div></div>`;
@@ -139,6 +160,7 @@ function speak(word){if('speechSynthesis' in window){speechSynthesis.cancel();co
 function bindWordMarks(){document.querySelectorAll('[data-mark]').forEach(b=>b.onclick=async()=>{const target=markWord();if(!target || actionSaves.has(String(target.id)))return;try{await act(target,b.dataset.mark);}catch(error){showToast('标记保存失败：'+error.message);}});}
 function bindStudy(word,opts){
   document.getElementById('audio')?.addEventListener('click',()=>speak(word.word));
+  document.getElementById('example-audio')?.addEventListener('click',()=>speak(word.example_en));
   bindWordMarks();
   document.getElementById('finish')?.addEventListener('click',()=>{if(!state.busy)finishStudy();});
   const next=()=>{if(state.busy || !document.querySelector('.study-card'))return;state.index+=state.mode==='match'?state.matchPairs.length:1;state.answered=false;state.busy=false;state.selected=null;renderStudyPage();};
@@ -146,19 +168,24 @@ function bindStudy(word,opts){
   document.getElementById('next')?.addEventListener('click',next);
   if(state.mode==='meaning')document.querySelectorAll('[data-option]').forEach((b,i)=>b.onclick=async()=>{if(state.answered)return;state.answered=true;const ok=opts[i]===word.meaning;document.querySelectorAll('[data-option]').forEach((x,j)=>{x.disabled=true;if(opts[j]===word.meaning)x.classList.add('correct');});if(!ok)b.classList.add('wrong');await answer(word,ok);document.getElementById('next').disabled=false;});
   if(state.mode==='flash'){
-    let revealed=false;
+    let revealed=true;
     document.getElementById('show-answer').onclick=()=>{
       revealed=!revealed;
-      document.getElementById('flash-answer').innerHTML=revealed ? `<strong>${esc(word.meaning)}</strong><p>${esc(word.example_en || '')}</p><p>${esc(word.example_cn || '')}</p>` : '点击显示释义';
-      const button=document.getElementById('show-answer');button.textContent=revealed?'隐藏释义':'显示释义';button.setAttribute('aria-expanded',String(revealed));
+      document.getElementById('flash-answer').classList.toggle('hidden',!revealed);
+      document.getElementById('flash-concealed').classList.toggle('hidden',revealed);
+      const button=document.getElementById('show-answer');button.setAttribute('aria-expanded',String(revealed));
+      button.title=revealed?'隐藏释义（空格键）':'显示释义（空格键）';
     };
+    const restart=()=>{state.index=0;state.correct=0;state.wrong=0;state.answered=false;state.selected=null;state.studied=new Set();state.results=new Map();renderStudyPage();};
+    document.getElementById('restart-study').onclick=()=>{if(!state.busy && !actionSaves.size)restart();};
+    document.getElementById('shuffle-study').onclick=()=>{if(state.busy || actionSaves.size)return;state.shuffled=!state.shuffled;state.words=state.shuffled?shuffled(state.orderedWords):[...state.orderedWords];restart();};
     document.getElementById('prev').onclick=()=>{if(state.busy || state.index===0)return;state.index--;renderStudyPage();};
     document.getElementById('browse-next').onclick=async()=>{
       if(state.busy)return;state.busy=true;state.studied.add(word.id);
       try{await recordProgress(word);}catch(error){showToast('进度保存失败：'+error.message);return;}finally{state.busy=false;}
       next();
     };
-    for(const [id,ok] of [['know',true],['unknown',false]]) document.getElementById(id).onclick=async()=>{if(state.busy)return;state.busy=true;await answer(word,ok);next();};
+    document.getElementById('know').onclick=async()=>{if(state.busy)return;state.busy=true;await answer(word,true);next();};
   }
   if(state.mode==='write'){
     let hintIndex=0;
@@ -182,10 +209,9 @@ function bindStudy(word,opts){
 function flashKnownReview(){return state.review && ['fuzzy','unknown'].includes(state.review.filter);}
 function keyboardHints(){
   const hints=state.mode==='flash' ? [
-    ['← / →','上一词 / 下一词'],['空格键','翻转'],['R','重读'],
-    ...(flashKnownReview() ? [['1','认识']] : [['1','模糊'],['2','不认识'],['3','星标']])
+    ...(flashKnownReview() ? [['←','上一词'],['1','认识'],['→','下一词'],['空格键','翻转'],['R','重读']] : [['←','上一词'],['1','模糊'],['→','下一词'],['2','不认识'],['空格键','翻转'],['3','星标'],['R','重读']])
   ] : state.mode==='write' ? [['空格键','提示（每次一个字母）'],['Enter','提交答案 / 答题后下一词']] : state.mode==='meaning' ? [['Enter','答题后下一词']] : [];
-  return hints.length ? `<div class="keyboard-hints" role="group" aria-label="快捷键"><p>⌨ 快捷键</p>${hints.map(([key,label])=>`<span><kbd>${key}</kbd><span>${label}</span></span>`).join('')}</div>` : '';
+  return hints.length ? `<div class="keyboard-hints" role="group" aria-label="快捷键"><strong>${studyIcon('keyboard')} 快捷键</strong>${hints.map(([key,label])=>`<span><kbd>${key}</kbd><span>${label}</span></span>`).join('')}</div>` : '';
 }
 function bindStudyKeyboard(){
   document.onkeydown=e=>{

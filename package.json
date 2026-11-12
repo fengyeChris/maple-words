@@ -1,6 +1,6 @@
 {
   "name": "maple-words",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "private": true,
   "description": "枫叶单词 · 支持离线词库、四种练习与重点词复习的英语学习软件",
   "scripts": {
