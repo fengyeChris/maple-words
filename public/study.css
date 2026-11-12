@@ -20,6 +20,11 @@ body.learning-page {
 .learning-page button { touch-action: manipulation; }
 .learning-page .learning-shell { min-height: 100vh; }
 .learning-page .learning-main { max-width: 648px; padding: 16px 20px 10px; flex: 0 0 auto; }
+.learning-page .study-topbar { display: flex; align-items: center; gap: 14px; margin: 0 0 12px; min-height: 38px; }
+.learning-page .study-back { display: inline-flex; align-items: center; flex-shrink: 0; gap: 4px; min-height: 38px; padding: 6px 12px 6px 8px; border: 1px solid #bdd0c5; border-radius: 4px; background: #fff; color: #306451; text-decoration: none; font-size: 14px; }
+.learning-page .study-back:hover { background: #eaf2ef; border-color: #43836f; }
+.learning-page .study-back[aria-busy="true"] { opacity: .6; pointer-events: none; }
+.learning-page .study-location { min-width: 0; font-size: 12px; color: #65716a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .learning-page .mode-tabs { gap: 0; padding: 3px; margin: 0 0 8px; border-radius: 4px; background: #fff; }
 .learning-page .mode-tabs a { min-height: 44px; padding: 9px 5px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 2px; color: #53665e; font-size: 14px; }
 .learning-page .mode-tabs a:hover { background: #f1f5f2; color: #306451; }

@@ -49,6 +49,41 @@ function wordsFor(courseId, unitId) {
 }
 function progressKey(user, course, unit) { return `${user}:${course}:${unit}`; }
 function actionKey(user, wordId) { return `${user}:${wordId}`; }
+function courseOverview(user, courseId) {
+  const course=publicCourses(user).find(c=>c.id===courseId);
+  if(!course) return null;
+  const today=new Date().toLocaleDateString('en-CA');
+  let todayKnown=true,correct=0,wrong=0;
+  const todayIds=new Set();
+  const previews=content.db.prepare('SELECT w.id,w.unit_id,w.word FROM words w JOIN units u ON u.id=w.unit_id WHERE u.book_id=? ORDER BY u.order_index,w.order_index,w.id').all(courseId);
+  const valid=new Set(previews.map(w=>w.id)),byUnit=new Map();
+  for(const word of previews){if(!byUnit.has(word.unit_id))byUnit.set(word.unit_id,[]);const list=byUnit.get(word.unit_id);if(list.length<5)list.push(word.word);}
+  for(const unit of course.units){
+    const p=state.progress[progressKey(user,courseId,unit.id)];
+    unit.preview=byUnit.get(unit.id) || [];
+    if(!p)continue;
+    for(const id of p.daily_studied?.[today] || [])if(valid.has(id))todayIds.add(id);
+    if(p.daily_incomplete?.[today] || (p.days?.includes(today) && !p.daily_studied?.[today]))todayKnown=false;
+    correct+=Math.max(0,Number(p.correct)||0);wrong+=Math.max(0,Number(p.wrong)||0);
+  }
+  const actions=Object.values(state.actions).filter(a=>a.user===user && valid.has(a.word_id));
+  return {...course,stats:{favorite:actions.filter(a=>a.favorite).length,learned:course.learned,today:todayKnown ? todayIds.size : null,accuracy:correct+wrong ? Math.round(correct*100/(correct+wrong)) : null},review:{fuzzy:actions.filter(a=>a.fuzzy).map(a=>content.getWordById(a.word_id)),unknown:actions.filter(a=>a.unknown).map(a=>content.getWordById(a.word_id))}};
+}
+function saveProgress(user,b) {
+  const key=progressKey(user,b.course_id,b.unit_id),old=state.progress[key] || {};
+  const valid=new Set(wordsFor(b.course_id,b.unit_id).map(w=>w.id));
+  if(!valid.size)throw Object.assign(new Error('单元不存在'),{status:400});
+  const submitted=(Array.isArray(b.studied_ids)?b.studied_ids:[]).filter(id=>valid.has(id));
+  const studied_ids=[...new Set([...(old.studied_ids || []),...submitted])].filter(id=>valid.has(id));
+  const day=new Date().toLocaleDateString('en-CA'),days=[...new Set([...(old.days || []),day])];
+  const daily_studied={...(old.daily_studied || {})},daily_incomplete={...(old.daily_incomplete || {})};
+  if((old.days || []).includes(day) && !daily_studied[day])daily_incomplete[day]=true;
+  // Only the current event belongs to today; a session may span midnight.
+  const eventIds=valid.has(b.event_word_id) ? [b.event_word_id] : submitted.filter(id=>!(old.studied_ids || []).includes(id));
+  daily_studied[day]=[...new Set([...(daily_studied[day] || []),...eventIds])].filter(id=>valid.has(id));
+  state.progress[key]={...old,course_id:Number(b.course_id),unit_id:Number(b.unit_id),mode:String(b.mode || ''),answered:Math.max(0,Number(b.answered)||0),correct:Math.max(0,Number(b.correct)||0),wrong:Math.max(0,Number(b.wrong)||0),studied_ids,days,daily_studied,daily_incomplete,user,updatedAt:Date.now()};
+  writeState(state);return state.progress[key];
+}
 function sendFile(res, filePath) {
   const ext = path.extname(filePath).toLowerCase();
   const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json; charset=utf-8' };
@@ -60,6 +95,10 @@ function route(req, res) {
   const user = idFrom(req);
   if (req.method === 'OPTIONS') { res.writeHead(204, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type, X-Local-User' }); return res.end(); }
   if (p === '/api/courses' && req.method === 'GET') return json(res, 200, publicCourses(user));
+  const overviewMatch=p.match(/^\/api\/courses\/(\d+)\/overview$/);
+  if(overviewMatch && req.method==='GET'){const overview=courseOverview(user,Number(overviewMatch[1]));return json(res,overview?200:404,overview || {message:'词书不存在'});}
+  const bookWordsMatch=p.match(/^\/api\/courses\/(\d+)\/words$/);
+  if(bookWordsMatch && req.method==='GET'){const course=content.getCourses().find(c=>c.id===Number(bookWordsMatch[1]));return json(res,course?200:404,course ? course.units.flatMap(u=>wordsFor(course.id,u.id)) : {message:'词书不存在'});}
   if (p === '/api/library/import' && req.method === 'POST') return parseBody(req).then(pack=>{ try { return json(res,201,content.importPack(pack)); } catch(e) { return json(res,400,{message:e.message}); } });
   const exportMatch=p.match(/^\/api\/library\/export\/(\d+)$/);
   if(exportMatch && req.method==='GET') { const pack=content.exportPack(exportMatch[1]); if(!pack) return json(res,404,{message:'词书不存在'}); res.setHeader('Content-Disposition',`attachment; filename="${pack.book.key}.json"`); return json(res,200,pack); }
@@ -83,7 +122,7 @@ function route(req, res) {
   if (p === '/api/auth/register' && req.method === 'POST') return parseBody(req).then(b => { if (!b.username || !b.password) return json(res, 400, { message: '请输入用户名和密码' }); if (state.users.some(x => x.username === b.username)) return json(res, 409, { message: '用户名已存在' }); const u = { id: crypto.randomUUID(), username: b.username, password: b.password, createdAt: Date.now() }; state.users.push(u); writeState(state); return json(res, 200, { access_token: u.id, user: { id: u.id, display_name: u.username } }); });
   if (p === '/api/auth/login' && req.method === 'POST') return parseBody(req).then(b => { const u = state.users.find(x => x.username === b.username && x.password === b.password); if (!u) return json(res, 401, { message: '用户名或密码不正确' }); return json(res, 200, { access_token: u.id, user: { id: u.id, display_name: u.username } }); });
   if (p === '/api/auth/logout' && req.method === 'POST') return json(res, 200, { ok: true });
-  if (p === '/api/progress' && req.method === 'POST') return parseBody(req).then(b => { const key = progressKey(user, b.course_id, b.unit_id); const old=state.progress[key] || {}; const valid=new Set(wordsFor(b.course_id,b.unit_id).map(w=>w.id)); if(!valid.size) return json(res,400,{message:'单元不存在'}); const studied_ids=[...new Set([...(old.studied_ids || []),...(Array.isArray(b.studied_ids)?b.studied_ids:[])])].filter(id=>valid.has(id)); const day=new Date().toLocaleDateString('en-CA'); const days=[...new Set([...(old.days || []),day])]; state.progress[key] = { ...old, ...b, studied_ids,days,user,updatedAt:Date.now() }; writeState(state); return json(res, 200, state.progress[key]); });
+  if (p === '/api/progress' && req.method === 'POST') return parseBody(req).then(b=>json(res,200,saveProgress(user,b)));
   if (p === '/api/word-actions' && req.method === 'POST') return parseBody(req).then(b => { const key = actionKey(user, b.word_id); state.actions[key] = { ...(state.actions[key] || {}), ...b, user, updatedAt: Date.now() }; writeState(state); return json(res, 200, state.actions[key]); });
   if (p === '/api/word-actions' && req.method === 'GET') { const actions = Object.values(state.actions).filter(a => a.user === user); return json(res, 200, actions.map(a => ({ ...a, word: content.getWordById(a.word_id) })).filter(a => a.word)); }
   if (p === '/api/user/books' && req.method === 'GET') return json(res, 200, state.books.filter(b => b.user === user));

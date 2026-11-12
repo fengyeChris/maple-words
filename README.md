@@ -6,9 +6,9 @@
 
 ## 下载即用
 
-**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.3.1-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
+**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.4.0-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
 
-下载 `MapleWords-v1.3.1-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
+下载 `MapleWords-v1.4.0-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
 
 适用于 Windows 10 / 11 的 x64 电脑。发布版包含运行环境、6本词书、空白学习记录和词库来源；不含个人账号或学习记录。
 
@@ -19,6 +19,10 @@
 页面由本地服务提供。学习词条、中文释义、音标、搜索和进度均不依赖外部网络。发音使用浏览器/Windows语音；是否能断网发音取决于本机是否已安装英语语音。
 
 ## 当前词书
+
+词书详情页提供当前书的学习统计、模糊 / 不认识复习卡片、单元预览与进度。桌面显示三列单元，窄屏自动调整。四种学习模式顶部都有返回按钮；从当前词书复习时，返回后仍保留该书与标记筛选。
+
+「打乱整本」生成包含该书全部词条的复习队列，刷新或切换练习模式保留词序；进度按每个词的真实所属单元保存。今日学习按本地服务日期逐词去重；旧版没有逐词日期，当天历史无法完整还原时显示 `—`，新一天起正常统计。正确率为各单元最近一轮答题的合计，单纯翻阅不计答题。
 
 | 本地词书 | 词条 | 单元 |
 |---|---:|---:|
@@ -127,6 +131,8 @@ node scripts/import-api.js --base-url https://你的数据服务 --course 4
 ## 主要本地接口
 
 - GET /api/courses
+- GET /api/courses/:id/overview（当前词书统计、单元词预览与重点复习词单）
+- GET /api/courses/:id/words（整本词书，用于离线整本乱序）
 - GET /api/courses/:id/units
 - GET /api/courses/:id/units/:unit/words
 - GET /api/courses/:id/units/:unit/stats

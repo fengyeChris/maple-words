@@ -1,0 +1,32 @@
+const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
+const {spawn}=require('child_process'),Database=require('better-sqlite3');
+const root=path.resolve(__dirname,'..'),temp=fs.mkdtempSync(path.join(os.tmpdir(),'maple-course-'));
+const stateFile=path.join(temp,'state.json'),dbFile=path.join(temp,'content.sqlite'),base='http://127.0.0.1:5199';
+let child;
+async function request(url,body,user){const r=await fetch(base+url,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(user?{'X-Local-User':user}:{})},...(body?{body:JSON.stringify(body)}:{})});assert.equal(r.status,200,url);return r.json();}
+(async()=>{try{
+  const source=new Database(path.join(root,'data/content.sqlite'),{readonly:true});await source.backup(dbFile);source.close();
+  const today=new Date().toLocaleDateString('en-CA');
+  const fixture={users:[{id:'qa-registered',username:'qa',password:'test'}],progress:{'local-user:4:154':{user:'local-user',course_id:4,unit_id:154,studied_ids:[3890,3891],correct:3,wrong:1,days:[today]}},actions:{'local-user:3890':{user:'local-user',word_id:3890,favorite:true,fuzzy:true},'qa-registered:3891':{user:'qa-registered',word_id:3891,unknown:true}},books:[]};
+  fs.writeFileSync(stateFile,JSON.stringify(fixture));
+  child=spawn(process.execPath,['server.js'],{cwd:root,env:{...process.env,PORT:'5199',CONTENT_DB:dbFile,STATE_FILE:stateFile},stdio:['ignore','pipe','inherit']});
+  await new Promise((resolve,reject)=>{child.stdout.once('data',resolve);child.once('error',reject);child.once('exit',code=>reject(Error('Server exited '+code)));});
+  const originalState=fs.readFileSync(stateFile,'utf8');
+  let book=await request('/api/courses/4/overview');
+  assert.equal(book.total_words,2078);assert.equal(book.units.length,42);assert.equal(book.units.at(-1).total_words,28);
+  assert.deepEqual(book.stats,{favorite:1,learned:2,today:null,accuracy:75});
+  assert.deepEqual(book.review.fuzzy.map(w=>w.id),[3890]);assert.equal(book.review.unknown.length,0);
+  const words=await request('/api/courses/4/words');assert.equal(words.length,2078);assert.equal(new Set(words.map(w=>w.id)).size,2078);
+  for(const unit of book.units)assert.deepEqual(unit.preview,words.filter(w=>w.unit_id===unit.id).slice(0,5).map(w=>w.word));
+  assert.equal(fs.readFileSync(stateFile,'utf8'),originalState,'Read-only overview must preserve records');
+  const other=await request('/api/courses/4/overview',null,'qa-registered');assert.deepEqual(other.stats,{favorite:0,learned:0,today:0,accuracy:null});assert.deepEqual(other.review.unknown.map(w=>w.id),[3891]);
+  const w=words.find(w=>w.unit_id!==154);
+  for(let n=0;n<2;n++)await request('/api/progress',{course_id:4,unit_id:w.unit_id,studied_ids:[w.id,3890],event_word_id:w.id,correct:1,wrong:0,daily_studied:{[today]:[3890]}},'qa-registered');
+  book=await request('/api/courses/4/overview',null,'qa-registered');assert.equal(book.stats.learned,1);assert.equal(book.stats.today,1);assert.equal(book.stats.accuracy,100);
+  const persisted=JSON.parse(fs.readFileSync(stateFile));assert.deepEqual(persisted.progress[`qa-registered:4:${w.unit_id}`].daily_studied[today],[w.id]);
+  await request('/api/progress',{course_id:4,unit_id:154,studied_ids:[3890,3891,3892],event_word_id:3892,correct:2,wrong:1});
+  book=await request('/api/courses/4/overview');assert.equal(book.stats.today,null,'Partial legacy day must stay incomplete');assert.equal(book.stats.learned,3);
+  const missing=await fetch(base+'/api/courses/999999/overview');assert.equal(missing.status,404);
+  const noWords=await fetch(base+'/api/courses/999999/words');assert.equal(noWords.status,404);
+  console.log('PASS: book overview and full vocabulary, per-unit previews, 2078 unique words and final 28, real progress/accuracy, registered-user isolation, daily deduplication, invalid IDs and client-supplied daily data ignored, legacy dates remain explicitly incomplete, read-only state preserved.');
+}finally{if(child && child.exitCode===null){child.kill();await new Promise(resolve=>child.once('exit',resolve));}fs.rmSync(temp,{recursive:true,force:true});}})().catch(e=>{console.error(e);process.exitCode=1;});
