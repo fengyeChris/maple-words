@@ -1,0 +1,607 @@
+{
+  "checked_at": "2026-11-12",
+  "course_endpoint": "https://beidanci365.com/api/courses",
+  "units_endpoint": "https://beidanci365.com/api/courses/4/units",
+  "course": {
+    "id": 4,
+    "key": "cet6_luan",
+    "title": "英语六级核心词汇",
+    "total_words": 2078,
+    "units": [
+      {
+        "id": 154,
+        "total_words": 50
+      },
+      {
+        "id": 155,
+        "total_words": 50
+      },
+      {
+        "id": 156,
+        "total_words": 50
+      },
+      {
+        "id": 157,
+        "total_words": 50
+      },
+      {
+        "id": 158,
+        "total_words": 50
+      },
+      {
+        "id": 159,
+        "total_words": 50
+      },
+      {
+        "id": 160,
+        "total_words": 50
+      },
+      {
+        "id": 161,
+        "total_words": 50
+      },
+      {
+        "id": 162,
+        "total_words": 50
+      },
+      {
+        "id": 163,
+        "total_words": 50
+      },
+      {
+        "id": 164,
+        "total_words": 50
+      },
+      {
+        "id": 165,
+        "total_words": 50
+      },
+      {
+        "id": 166,
+        "total_words": 50
+      },
+      {
+        "id": 167,
+        "total_words": 50
+      },
+      {
+        "id": 168,
+        "total_words": 50
+      },
+      {
+        "id": 169,
+        "total_words": 50
+      },
+      {
+        "id": 170,
+        "total_words": 50
+      },
+      {
+        "id": 171,
+        "total_words": 50
+      },
+      {
+        "id": 172,
+        "total_words": 50
+      },
+      {
+        "id": 173,
+        "total_words": 50
+      },
+      {
+        "id": 174,
+        "total_words": 50
+      },
+      {
+        "id": 175,
+        "total_words": 50
+      },
+      {
+        "id": 176,
+        "total_words": 50
+      },
+      {
+        "id": 177,
+        "total_words": 50
+      },
+      {
+        "id": 178,
+        "total_words": 50
+      },
+      {
+        "id": 179,
+        "total_words": 50
+      },
+      {
+        "id": 180,
+        "total_words": 50
+      },
+      {
+        "id": 181,
+        "total_words": 50
+      },
+      {
+        "id": 182,
+        "total_words": 50
+      },
+      {
+        "id": 183,
+        "total_words": 50
+      },
+      {
+        "id": 184,
+        "total_words": 50
+      },
+      {
+        "id": 185,
+        "total_words": 50
+      },
+      {
+        "id": 186,
+        "total_words": 50
+      },
+      {
+        "id": 187,
+        "total_words": 50
+      },
+      {
+        "id": 188,
+        "total_words": 50
+      },
+      {
+        "id": 189,
+        "total_words": 50
+      },
+      {
+        "id": 190,
+        "total_words": 50
+      },
+      {
+        "id": 191,
+        "total_words": 50
+      },
+      {
+        "id": 192,
+        "total_words": 50
+      },
+      {
+        "id": 193,
+        "total_words": 50
+      },
+      {
+        "id": 194,
+        "total_words": 50
+      },
+      {
+        "id": 195,
+        "total_words": 28
+      }
+    ]
+  },
+  "units": [
+    {
+      "bank_id": 3,
+      "id": 154,
+      "key": "u1",
+      "order_index": 1,
+      "start_index": 0,
+      "title": "第1单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 155,
+      "key": "u2",
+      "order_index": 2,
+      "start_index": 50,
+      "title": "第2单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 156,
+      "key": "u3",
+      "order_index": 3,
+      "start_index": 100,
+      "title": "第3单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 157,
+      "key": "u4",
+      "order_index": 4,
+      "start_index": 150,
+      "title": "第4单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 158,
+      "key": "u5",
+      "order_index": 5,
+      "start_index": 200,
+      "title": "第5单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 159,
+      "key": "u6",
+      "order_index": 6,
+      "start_index": 250,
+      "title": "第6单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 160,
+      "key": "u7",
+      "order_index": 7,
+      "start_index": 300,
+      "title": "第7单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 161,
+      "key": "u8",
+      "order_index": 8,
+      "start_index": 350,
+      "title": "第8单元",
+      "total_words": 50,
+      "membership_locked": false
+    },
+    {
+      "bank_id": 3,
+      "id": 162,
+      "key": "u9",
+      "order_index": 9,
+      "start_index": 400,
+      "title": "第9单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 163,
+      "key": "u10",
+      "order_index": 10,
+      "start_index": 450,
+      "title": "第10单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 164,
+      "key": "u11",
+      "order_index": 11,
+      "start_index": 500,
+      "title": "第11单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 165,
+      "key": "u12",
+      "order_index": 12,
+      "start_index": 550,
+      "title": "第12单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 166,
+      "key": "u13",
+      "order_index": 13,
+      "start_index": 600,
+      "title": "第13单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 167,
+      "key": "u14",
+      "order_index": 14,
+      "start_index": 650,
+      "title": "第14单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 168,
+      "key": "u15",
+      "order_index": 15,
+      "start_index": 700,
+      "title": "第15单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 169,
+      "key": "u16",
+      "order_index": 16,
+      "start_index": 750,
+      "title": "第16单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 170,
+      "key": "u17",
+      "order_index": 17,
+      "start_index": 800,
+      "title": "第17单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 171,
+      "key": "u18",
+      "order_index": 18,
+      "start_index": 850,
+      "title": "第18单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 172,
+      "key": "u19",
+      "order_index": 19,
+      "start_index": 900,
+      "title": "第19单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 173,
+      "key": "u20",
+      "order_index": 20,
+      "start_index": 950,
+      "title": "第20单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 174,
+      "key": "u21",
+      "order_index": 21,
+      "start_index": 1000,
+      "title": "第21单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 175,
+      "key": "u22",
+      "order_index": 22,
+      "start_index": 1050,
+      "title": "第22单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 176,
+      "key": "u23",
+      "order_index": 23,
+      "start_index": 1100,
+      "title": "第23单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 177,
+      "key": "u24",
+      "order_index": 24,
+      "start_index": 1150,
+      "title": "第24单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 178,
+      "key": "u25",
+      "order_index": 25,
+      "start_index": 1200,
+      "title": "第25单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 179,
+      "key": "u26",
+      "order_index": 26,
+      "start_index": 1250,
+      "title": "第26单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 180,
+      "key": "u27",
+      "order_index": 27,
+      "start_index": 1300,
+      "title": "第27单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 181,
+      "key": "u28",
+      "order_index": 28,
+      "start_index": 1350,
+      "title": "第28单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 182,
+      "key": "u29",
+      "order_index": 29,
+      "start_index": 1400,
+      "title": "第29单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 183,
+      "key": "u30",
+      "order_index": 30,
+      "start_index": 1450,
+      "title": "第30单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 184,
+      "key": "u31",
+      "order_index": 31,
+      "start_index": 1500,
+      "title": "第31单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 185,
+      "key": "u32",
+      "order_index": 32,
+      "start_index": 1550,
+      "title": "第32单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 186,
+      "key": "u33",
+      "order_index": 33,
+      "start_index": 1600,
+      "title": "第33单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 187,
+      "key": "u34",
+      "order_index": 34,
+      "start_index": 1650,
+      "title": "第34单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 188,
+      "key": "u35",
+      "order_index": 35,
+      "start_index": 1700,
+      "title": "第35单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 189,
+      "key": "u36",
+      "order_index": 36,
+      "start_index": 1750,
+      "title": "第36单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 190,
+      "key": "u37",
+      "order_index": 37,
+      "start_index": 1800,
+      "title": "第37单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 191,
+      "key": "u38",
+      "order_index": 38,
+      "start_index": 1850,
+      "title": "第38单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 192,
+      "key": "u39",
+      "order_index": 39,
+      "start_index": 1900,
+      "title": "第39单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 193,
+      "key": "u40",
+      "order_index": 40,
+      "start_index": 1950,
+      "title": "第40单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 194,
+      "key": "u41",
+      "order_index": 41,
+      "start_index": 2000,
+      "title": "第41单元",
+      "total_words": 50,
+      "membership_locked": true
+    },
+    {
+      "bank_id": 3,
+      "id": 195,
+      "key": "u42",
+      "order_index": 42,
+      "start_index": 2050,
+      "title": "第42单元",
+      "total_words": 28,
+      "membership_locked": true
+    }
+  ],
+  "unit_162_response": {
+    "status": 403,
+    "code": "membership_required"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "revision": "39cfb9672c0906b63569e0453c2e6abfb9ab182a",
+  "source_url": "https://github.com/skywind3000/ECDICT",
+  "csv_sha256": "d1ecbdf9ee2b920afb6f430ca6b6bb9f559588cf0dff86e04bd255f9390843cc",
+  "packs": [
+    {
+      "file": "ecdict-cet4.json",
+      "title": "大学英语四级 · ECDICT",
+      "words": 3849,
+      "units": 77
+    },
+    {
+      "file": "ecdict-cet6.json",
+      "title": "大学英语六级 · ECDICT",
+      "words": 5407,
+      "units": 109
+    },
+    {
+      "file": "ecdict-ky.json",
+      "title": "考研英语 · ECDICT",
+      "words": 4801,
+      "units": 97
+    },
+    {
+      "file": "ecdict-ielts.json",
+      "title": "雅思英语 · ECDICT",
+      "words": 5040,
+      "units": 101
+    },
+    {
+      "file": "ecdict-toefl.json",
+      "title": "托福英语 · ECDICT",
+      "words": 6974,
+      "units": 140
+    }
+  ]
+}

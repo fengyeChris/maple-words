@@ -1,0 +1,22 @@
+{
+  "name": "枫叶单词",
+  "short_name": "枫叶单词",
+  "description": "本地英语学习软件",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f3",
+  "theme_color": "#bd583c",
+  "icons": [
+    {
+      "src": "/assets/maple-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/maple-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

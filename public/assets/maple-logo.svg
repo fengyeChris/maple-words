@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x2="0" y2="1"><stop stop-color="#fff9ed"/><stop offset="1" stop-color="#f3e8d8"/></linearGradient>
+    <linearGradient id="leaf" x1=".15" y1=".1" x2=".8" y2="1"><stop stop-color="#ed7a42"/><stop offset=".55" stop-color="#d04e33"/><stop offset="1" stop-color="#a8322a"/></linearGradient>
+  </defs>
+  <rect x="16" y="16" width="992" height="992" rx="224" fill="url(#tile)"/>
+  <path d="M512 146 575 287 626 249 611 393 716 322 720 389 826 367 774 481 831 500 654 639 671 699 538 676 538 782 486 782 486 676 353 699 370 639 193 500 250 481 198 367 304 389 308 322 413 393 398 249 449 287Z" fill="url(#leaf)"/>
+  <path d="M264 707C346 699 421 725 486 765V841C413 802 347 783 264 789Z" fill="#b94832"/>
+  <path d="M760 707C678 699 603 725 538 765V841C611 802 677 783 760 789Z" fill="#d96b41"/>
+  <path d="M512 408V816" fill="none" stroke="#fff8eb" stroke-width="24" stroke-linecap="round"/>
+  <path d="m512 581-94-83m94 132 112-104" fill="none" stroke="#fff8eb" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+</svg>

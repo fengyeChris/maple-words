@@ -1,0 +1,12 @@
+node_modules/
+/runtime/
+/outputs/
+/work/
+data/state.json
+data/*-wal
+data/*-shm
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db

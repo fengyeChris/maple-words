@@ -1,0 +1,4042 @@
+[
+  {
+    "unit_id": 154,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "他们不得不到镇上去出售他们农场的产品。",
+        "example_en": "They had to travel into town to trade the produce from their farm.",
+        "id": 3890,
+        "meaning": "做买卖；交换",
+        "phonetic": "treɪd",
+        "pos": "v.",
+        "word": "trade"
+      },
+      {
+        "distractors": [],
+        "example_cn": "许多吸毒者最后都是靠做毒品买卖来供自己吸毒。",
+        "example_en": "Many users end up dealing to support their habit.",
+        "id": 3891,
+        "meaning": "买卖毒品",
+        "phonetic": "diːl",
+        "pos": "v.",
+        "word": "deal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他打算徒步旅行环游世界一周。",
+        "example_en": "He wants to hike round the world.",
+        "id": 3892,
+        "meaning": "作长途徒步旅行",
+        "phonetic": "haɪk",
+        "pos": "v.",
+        "word": "hike"
+      },
+      {
+        "distractors": [],
+        "example_cn": "政府现在必须采取行动遏止暴力犯罪的上升。",
+        "example_en": "The government must take action (=do something) now to stop the rise in violent crime.",
+        "id": 3893,
+        "meaning": "行动",
+        "phonetic": "'ækʃ(ə)n",
+        "pos": "n.",
+        "word": "action"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她仍在努力从袭击以及由此造成的伤害中恢复过来。",
+        "example_en": "She is still trying to get over the attack and the resultant injuries.",
+        "id": 3894,
+        "meaning": "作为结果而发生的",
+        "phonetic": "",
+        "pos": "adj.",
+        "word": "resultant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "通货膨胀的加剧和随之而来的需求下降",
+        "example_en": "the rise in inflation and consequent fall in demand",
+        "id": 3895,
+        "meaning": "作为结果的；必然的",
+        "phonetic": "'kɒnsɪkw(ə)nt",
+        "pos": "adj.",
+        "word": "consequent"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…施特劳斯、莫扎特、贝多芬及其他伟大作曲家创作的音乐。",
+        "example_en": "...music by Strauss, Mozart, Beethoven, and other great composers.",
+        "id": 3896,
+        "meaning": "作曲家",
+        "phonetic": "kəm'pəʊzə",
+        "pos": "n.",
+        "word": "composer"
+      },
+      {
+        "distractors": [],
+        "example_cn": "当你忙碌了一整天后，你最不愿意做的事就是花好几个钟头在灼热的火炉边辛苦地劳作。",
+        "example_en": "When you're busy all day the last thing you want to do is spend hours slaving over a hot stove.",
+        "id": 3897,
+        "meaning": "作苦工；奴役",
+        "phonetic": "sleɪv",
+        "pos": "v.",
+        "word": "slave"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她哼哧着费力地把我抱起来。",
+        "example_en": "Grunting with effort, she lifted me up.",
+        "id": 3898,
+        "meaning": "作呼噜声；咕哝",
+        "phonetic": "grʌnt",
+        "pos": "v.",
+        "word": "grunt"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我讨厌和没有幽默感的人打交道。",
+        "example_en": "I can't abide people with no sense of humour.",
+        "id": 3899,
+        "meaning": "忍受；遵守",
+        "phonetic": "ə'baɪd",
+        "pos": "v.",
+        "word": "abide"
+      },
+      {
+        "distractors": [],
+        "example_cn": "谢利很重视自己的隐私。",
+        "example_en": "Shelley valued her privacy.",
+        "id": 3900,
+        "meaning": "尊重，重视；估价",
+        "phonetic": "'væljuː",
+        "pos": "v.",
+        "word": "value"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们这样做是因为我们相信每个人的尊严和价值。",
+        "example_en": "We do this because we believe in the dignity and value of every person.",
+        "id": 3901,
+        "meaning": "庄重；尊严；体面",
+        "phonetic": "'dɪgnɪtɪ",
+        "pos": "n.",
+        "word": "dignity"
+      },
+      {
+        "distractors": [],
+        "example_cn": "最远的恒星",
+        "example_en": "the outermost stars",
+        "id": 3902,
+        "meaning": "最外面的，最远的",
+        "phonetic": "'aʊtəməʊst",
+        "pos": "adj.",
+        "word": "outermost"
+      },
+      {
+        "distractors": [],
+        "example_cn": "最适宜生长的条件",
+        "example_en": "optimum conditions for growth",
+        "id": 3903,
+        "meaning": "最优的，最适宜的",
+        "phonetic": "'ɒptɪməm",
+        "pos": "adj.",
+        "word": "optimum"
+      },
+      {
+        "distractors": [],
+        "example_cn": "斯坦最初想进医学院。",
+        "example_en": "Stan initially wanted to go to medical school.",
+        "id": 3904,
+        "meaning": "最初，开始",
+        "phonetic": "ɪ'nɪʃ(ə)lɪ",
+        "pos": "adv.",
+        "word": "initially"
+      },
+      {
+        "distractors": [],
+        "example_cn": "通常她很少化妆，可今晚显然是个例外。",
+        "example_en": "Normally she wore little makeup, but this evening was clearly an exception.",
+        "id": 3905,
+        "meaning": "化妆品；性格；构造；组成",
+        "phonetic": "meɪkʌp",
+        "pos": "n.",
+        "word": "makeup"
+      },
+      {
+        "distractors": [],
+        "example_cn": "内置录像机的电视",
+        "example_en": "a TV and integral video recorder",
+        "id": 3906,
+        "meaning": "作为组成部分的；内置的",
+        "phonetic": "ˈɪntɪɡrəl",
+        "pos": "adj.",
+        "word": "integral"
+      },
+      {
+        "distractors": [],
+        "example_cn": "有些矿物的化学构成很复杂。",
+        "example_en": "Some minerals have complex chemical compositions.",
+        "id": 3907,
+        "meaning": "组成，构成，结构",
+        "phonetic": "kɒmpə'zɪʃ(ə)n",
+        "pos": "n.",
+        "word": "composition"
+      },
+      {
+        "distractors": [],
+        "example_cn": "进步的重大阻碍",
+        "example_en": "a major block to progress",
+        "id": 3908,
+        "meaning": "阻塞；障碍物",
+        "phonetic": "blɒk",
+        "pos": "n.",
+        "word": "block"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…她谴责极右党派的一本耸人听闻的书。",
+        "example_en": "...a sensational book in which she damns the ultraright party.",
+        "id": 3909,
+        "meaning": "谴责",
+        "phonetic": "dæm",
+        "pos": "v.",
+        "word": "damn"
+      },
+      {
+        "distractors": [],
+        "example_cn": "将会有充足的机会来放松、游泳和接受一些阳光。",
+        "example_en": "There'll be ample opportunity to relax, swim and soak up some sun.",
+        "id": 3910,
+        "meaning": "足够的；宽敞的",
+        "phonetic": "'æmp(ə)l",
+        "pos": "adj.",
+        "word": "ample"
+      },
+      {
+        "distractors": [],
+        "example_cn": "简单的午餐就够了。",
+        "example_en": "A light lunch will suffice.",
+        "id": 3911,
+        "meaning": "足够",
+        "phonetic": "sə'faɪs",
+        "pos": "v.",
+        "word": "suffice"
+      },
+      {
+        "distractors": [],
+        "example_cn": "房东拒绝和他续签租约。",
+        "example_en": "The landlord refused to renew his lease.",
+        "id": 3912,
+        "meaning": "租约，契约，租契",
+        "phonetic": "liːs",
+        "pos": "n.",
+        "word": "lease"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们包了一条船带我们到一些较小的岛上去。",
+        "example_en": "We chartered a boat to take us to some of the smaller islands.",
+        "id": 3913,
+        "meaning": "包租（飞机、船等）",
+        "phonetic": "'tʃɑːtə",
+        "pos": "v.",
+        "word": "charter"
+      },
+      {
+        "distractors": [],
+        "example_cn": "联合国总部",
+        "example_en": "the headquarters of the United Nations",
+        "id": 3914,
+        "meaning": "总部",
+        "phonetic": "hed'kwɔːtəz",
+        "pos": "n.",
+        "word": "headquarters"
+      },
+      {
+        "distractors": [],
+        "example_cn": "营销主管",
+        "example_en": "a marketing executive",
+        "id": 3915,
+        "meaning": "（机构或公司的）主管，经理",
+        "phonetic": "ɪg'zekjʊtɪv; eg-",
+        "pos": "n.",
+        "word": "executive"
+      },
+      {
+        "distractors": [],
+        "example_cn": "报告中说约克郡的很多自来水总管道需要更换。",
+        "example_en": "The report found that many of Yorkshire’s water mains needed replacing.",
+        "id": 3916,
+        "meaning": "总管道，干线",
+        "phonetic": "meɪn",
+        "pos": "n.",
+        "word": "main"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…失业人数的总体上升。",
+        "example_en": "...the overall rise in unemployment.",
+        "id": 3917,
+        "meaning": "总的",
+        "phonetic": "'əʊvərɔːl",
+        "pos": "adj.",
+        "word": "overall"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这个自负的女人！",
+        "example_en": "The conceit of the woman!",
+        "id": 3918,
+        "meaning": "自负，自高自大",
+        "phonetic": "kən'siːt",
+        "pos": "n.",
+        "word": "conceit"
+      },
+      {
+        "distractors": [],
+        "example_cn": "太阳的紫外线是皮肤晒黑和晒伤的原因。",
+        "example_en": "The sun's ultraviolet rays are responsible for both tanning and burning.",
+        "id": 3919,
+        "meaning": "紫外（线）的",
+        "phonetic": "ʌltrə'vaɪələt",
+        "pos": "adj.",
+        "word": "ultraviolet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他是拿破仑·波拿巴的嫡系后裔。",
+        "example_en": "He was a direct descendant of Napoleon Bonaparte.",
+        "id": 3920,
+        "meaning": "子孙，后裔",
+        "phonetic": "dɪ'send(ə)nt",
+        "pos": "n.",
+        "word": "descendant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "大使资助了一个100万美元的公共服务奖学金项目。",
+        "example_en": "The ambassador has endowed a $1 million public-service fellowships programme.",
+        "id": 3921,
+        "meaning": "资助；赋予",
+        "phonetic": "ɪn'daʊ; en-",
+        "pos": "v.",
+        "word": "endow"
+      },
+      {
+        "distractors": [],
+        "example_cn": "分析开始前，每项数据都经过了核查。",
+        "example_en": "Each datum was checked before the analysis began.",
+        "id": 3922,
+        "meaning": "资料；数据；已知数",
+        "phonetic": "ˈdeɪtəm ; ˈdɑːtəm",
+        "pos": "n.",
+        "word": "datum"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他离校时没有拿到任何文凭。",
+        "example_en": "He left school without any qualifications.",
+        "id": 3923,
+        "meaning": "资格；学历",
+        "phonetic": ",kwɒlɪfɪ'keɪʃ(ə)n",
+        "pos": "n.",
+        "word": "qualification"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她来自一个中产阶级家庭。",
+        "example_en": "She came from a bourgeois family.",
+        "id": 3924,
+        "meaning": "中产阶级的；庸俗的；资产阶级的",
+        "phonetic": "'bʊəʒwɑː",
+        "pos": "adj.",
+        "word": "bourgeois"
+      },
+      {
+        "distractors": [],
+        "example_cn": "森林里居住着一个樵夫和一个啄木鸟。",
+        "example_en": "A woodcutter and a woodpecker lived in the forest.",
+        "id": 3925,
+        "meaning": "啄木鸟",
+        "phonetic": "'wʊdpekə",
+        "pos": "n.",
+        "word": "woodpecker"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他们停下了脚步，这下他几乎撞到他们。",
+        "example_en": "They stopped walking and he almost bumped into them.",
+        "id": 3926,
+        "meaning": "撞上",
+        "phonetic": "bʌmp",
+        "pos": "v.",
+        "word": "bump"
+      },
+      {
+        "distractors": [],
+        "example_cn": "门摆向里面，砰的一声猛力撞上了门后的五斗橱。",
+        "example_en": "The door swung inwards to crash against a chest of drawers behind it.",
+        "id": 3927,
+        "meaning": "（发出巨响的） 猛撞",
+        "phonetic": "kræʃ",
+        "pos": "v.",
+        "word": "crash"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我家当时经济窘迫。",
+        "example_en": "My family was in a bad way financially.",
+        "id": 3928,
+        "meaning": "（特定的）状态，状况",
+        "phonetic": "weɪ",
+        "pos": "n.",
+        "word": "way"
+      },
+      {
+        "distractors": [],
+        "example_cn": "食物好吃极了。",
+        "example_en": "The food was superb.",
+        "id": 3929,
+        "meaning": "壮丽的；超等的",
+        "phonetic": "suː'pɜːb; sjuː-",
+        "pos": "adj.",
+        "word": "superb"
+      },
+      {
+        "distractors": [],
+        "example_cn": "摆满书籍和装饰品的架子",
+        "example_en": "a shelf covered with books and ornaments",
+        "id": 3930,
+        "meaning": "装饰物",
+        "phonetic": "'ɔːnəm(ə)nt",
+        "pos": "n.",
+        "word": "ornament"
+      },
+      {
+        "distractors": [],
+        "example_cn": "门楣上的饰板",
+        "example_en": "a decorative panel above the door",
+        "id": 3931,
+        "meaning": "装饰的；可作装饰的",
+        "phonetic": "'dek(ə)rətɪv",
+        "pos": "adj.",
+        "word": "decorative"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…一个装饰性喷泉。",
+        "example_en": "...an ornamental fountain.",
+        "id": 3932,
+        "meaning": "装饰的",
+        "phonetic": "ɔːnə'ment(ə)l",
+        "pos": "adj.",
+        "word": "ornamental"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她丈夫把作品装裱到丝绒纸上，又做了框架。",
+        "example_en": "Her husband mounts the work on velour paper and makes the frame.",
+        "id": 3933,
+        "meaning": "装配",
+        "phonetic": "maʊnt",
+        "pos": "v.",
+        "word": "mount"
+      },
+      {
+        "distractors": [],
+        "example_cn": "货物已经准备好装运。",
+        "example_en": "The goods are ready for shipment.",
+        "id": 3934,
+        "meaning": "装载的货物；装货",
+        "phonetic": "'ʃɪpm(ə)nt",
+        "pos": "n.",
+        "word": "shipment"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…将要经过装罐、去皮、切块或其他加工程序的水果和蔬菜。",
+        "example_en": "...fruits and vegetables that will be canned, skinned, diced, or otherwise processed.",
+        "id": 3935,
+        "meaning": "装罐头",
+        "phonetic": "kæn",
+        "pos": "v.",
+        "word": "can"
+      },
+      {
+        "distractors": [],
+        "example_cn": "盥洗台上摆放整齐的化妆品",
+        "example_en": "make-up arrayed on the bathroom counter",
+        "id": 3936,
+        "meaning": "（美观地）排列",
+        "phonetic": "ə'reɪ",
+        "pos": "v.",
+        "word": "array"
+      },
+      {
+        "distractors": [],
+        "example_cn": "马路上的一小段绕行道让国王大道沿街的商家十分头疼。",
+        "example_en": "A slight diversion in the road is causing major headaches for businesses along El Camino Real.",
+        "id": 3937,
+        "meaning": "转移；改道；娱乐",
+        "phonetic": "daɪ'vɜːʃ(ə)n; dɪ-",
+        "pos": "n.",
+        "word": "diversion"
+      },
+      {
+        "distractors": [],
+        "example_cn": "由19世纪谷仓改建的房子",
+        "example_en": "a 19th-century converted barn",
+        "id": 3938,
+        "meaning": "转变，改变，变换",
+        "phonetic": "kən'vɜːt",
+        "pos": "v.",
+        "word": "convert"
+      },
+      {
+        "distractors": [],
+        "example_cn": "从青少年过渡到成年有时是一个非常痛苦的过程。",
+        "example_en": "Making the transition from youth to adulthood can be very painful.",
+        "id": 3939,
+        "meaning": "转变，变迁；过渡",
+        "phonetic": "træn'zɪʃ(ə)n; trɑːn-; -'sɪʃ-",
+        "pos": "n.",
+        "word": "transition"
+      }
+    ]
+  },
+  {
+    "unit_id": 155,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "在旋转时，力变成力矩，质量变成转动惯量，加速度变成角加速度。",
+        "example_en": "In rotation, force becomes torque, mass becomes moment of inertia, and acceleration becomes angular acceleration.",
+        "id": 3940,
+        "meaning": "转（力）矩，扭（力）矩",
+        "phonetic": "tɔːk",
+        "pos": "n.",
+        "word": "torque"
+      },
+      {
+        "distractors": [],
+        "example_cn": "陪审团席",
+        "example_en": "the jury box",
+        "id": 3941,
+        "meaning": "（法庭的）专席",
+        "phonetic": "bɒks",
+        "pos": "n.",
+        "word": "box"
+      },
+      {
+        "distractors": [],
+        "example_cn": "鼓手马库斯马贝尔格瑞夫为年轻艺术家们举办了一场爵士乐研讨会。",
+        "example_en": "Trumpeter Marcus Belgrave ran a jazz workshop for young artists.",
+        "id": 3942,
+        "meaning": "专题讨论会",
+        "phonetic": "'wɜːkʃɒp",
+        "pos": "n.",
+        "word": "workshop"
+      },
+      {
+        "distractors": [],
+        "example_cn": "专利锁",
+        "example_en": "a patent lock",
+        "id": 3943,
+        "meaning": "专利的",
+        "phonetic": "'pæt(ə)nt; 'peɪt(ə)nt",
+        "pos": "adj.",
+        "word": "patent"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她手里紧紧抓着一瓶香槟酒。",
+        "example_en": "She was clutching a bottle of champagne.",
+        "id": 3944,
+        "meaning": "抓住，掌握，攫",
+        "phonetic": "klʌtʃ",
+        "pos": "v.",
+        "word": "clutch"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他们说以前常有老鹰在那些岩石中筑巢。",
+        "example_en": "They say eagles used to nest in those rocks.",
+        "id": 3945,
+        "meaning": "筑巢，为…筑巢",
+        "phonetic": "nest",
+        "pos": "v.",
+        "word": "nest"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这家铸币厂明年将铸造新的银币。",
+        "example_en": "The mint will coin new silver pieces next year.",
+        "id": 3946,
+        "meaning": "铸造（硬币）",
+        "phonetic": "kɒɪn",
+        "pos": "v.",
+        "word": "coin"
+      },
+      {
+        "distractors": [],
+        "example_cn": "著名作家",
+        "example_en": "a noted author",
+        "id": 3947,
+        "meaning": "著名的，知名的",
+        "phonetic": "'nəʊtɪd",
+        "pos": "adj.",
+        "word": "noted"
+      },
+      {
+        "distractors": [],
+        "example_cn": "入口处由警惕的保安人员把守。",
+        "example_en": "The entrances are guarded by watchful security staff.",
+        "id": 3948,
+        "meaning": "注意的，警惕的",
+        "phonetic": "",
+        "pos": "adj.",
+        "word": "watchful"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他的儿子被注射了强效的药。",
+        "example_en": "His son was injected with strong drugs.",
+        "id": 3949,
+        "meaning": "注射；注满；喷射",
+        "phonetic": "ɪn'dʒekt",
+        "pos": "v.",
+        "word": "inject"
+      },
+      {
+        "distractors": [],
+        "example_cn": "高放射性材料的存放",
+        "example_en": "the storage of highly radioactive material",
+        "id": 3950,
+        "meaning": "贮藏；保管",
+        "phonetic": "'stɔːrɪdʒ",
+        "pos": "n.",
+        "word": "storage"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我不知道如果我身在你的处境会怎么办。",
+        "example_en": "I’m not sure what I would do if I were in your position .",
+        "id": 3951,
+        "meaning": "形势；主张，立场",
+        "phonetic": "pə'zɪʃ(ə)n",
+        "pos": "n.",
+        "word": "position"
+      },
+      {
+        "distractors": [],
+        "example_cn": "南澳大利亚的一个都市区",
+        "example_en": "a metropolitan area of South Australia",
+        "id": 3952,
+        "meaning": "主要都市的",
+        "phonetic": "metrə'pɒlɪt(ə)n",
+        "pos": "adj.",
+        "word": "metropolitan"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这笔钱主要投资于股票。",
+        "example_en": "The money is principally invested in stocks and shares.",
+        "id": 3953,
+        "meaning": "主要，大抵",
+        "phonetic": "'prɪnsɪp(ə)lɪ",
+        "pos": "adv.",
+        "word": "principally"
+      },
+      {
+        "distractors": [],
+        "example_cn": "芹菜茎",
+        "example_en": "celery stalks",
+        "id": 3954,
+        "meaning": "主茎，叶柄",
+        "phonetic": "stɔːk",
+        "pos": "n.",
+        "word": "stalk"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我很高兴主持你们的会议。",
+        "example_en": "I shall be pleased to preside at your meetings.",
+        "id": 3955,
+        "meaning": "主持；主奏",
+        "phonetic": "prɪ'zaɪd",
+        "pos": "v.",
+        "word": "preside"
+      },
+      {
+        "distractors": [],
+        "example_cn": "示威者被赶出大厅。",
+        "example_en": "The demonstrators were ejected from the hall.",
+        "id": 3956,
+        "meaning": "逐出，排斥；喷射",
+        "phonetic": "ɪ'dʒekt",
+        "pos": "v.",
+        "word": "eject"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…竹墙小屋。",
+        "example_en": "...huts with walls of bamboo.",
+        "id": 3957,
+        "meaning": "竹；竹杆，竹棍",
+        "phonetic": "bæm'buː",
+        "pos": "n.",
+        "word": "bamboo"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她戴了许多金首饰。",
+        "example_en": "She wears a lot of gold jewelry.",
+        "id": 3958,
+        "meaning": "珠宝，珠宝饰物",
+        "phonetic": "'dʒuːəlrɪ",
+        "pos": "n.",
+        "word": "jewellery"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的脸上布满皱纹。",
+        "example_en": "Her face was a mass of wrinkles.",
+        "id": 3959,
+        "meaning": "皱纹",
+        "phonetic": "'rɪŋkl",
+        "pos": "n.",
+        "word": "wrinkle"
+      },
+      {
+        "distractors": [],
+        "example_cn": "角动量是一种轴矢量。",
+        "example_en": "Angular momentum is an axial vector quantity.",
+        "id": 3960,
+        "meaning": "轴的；轴向的",
+        "phonetic": "'æksɪəl",
+        "pos": "adj.",
+        "word": "axial"
+      },
+      {
+        "distractors": [],
+        "example_cn": "地球绕着南北两极之间的地轴自转。",
+        "example_en": "The Earth rotates on an axis between the north and south poles.",
+        "id": 3961,
+        "meaning": "轴，轴线",
+        "phonetic": "'æksɪs",
+        "pos": "n.",
+        "word": "axis"
+      },
+      {
+        "distractors": [],
+        "example_cn": "...背景处环绕着孩子们的声音。",
+        "example_en": "...ambient sounds of children in the background.",
+        "id": 3962,
+        "meaning": "周围的，包围着的",
+        "phonetic": "'æmbɪənt",
+        "pos": "adj.",
+        "word": "ambient"
+      },
+      {
+        "distractors": [],
+        "example_cn": "护士的定期上门探访",
+        "example_en": "periodic home visits by nurses",
+        "id": 3963,
+        "meaning": "周期的；一定时期的",
+        "phonetic": ",pɪərɪ'ɒdɪk",
+        "pos": "adj.",
+        "word": "periodic"
+      },
+      {
+        "distractors": [],
+        "example_cn": "1月，杰克和金庆祝了他们的结婚20周年纪念日。",
+        "example_en": "Jack and Kim celebrated their twentieth wedding anniversary in January.",
+        "id": 3964,
+        "meaning": "周年纪念日",
+        "phonetic": "ænɪ'vɜːs(ə)rɪ",
+        "pos": "n.",
+        "word": "anniversary"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这座城市的市郊",
+        "example_en": "the city’s peripheral suburbs",
+        "id": 3965,
+        "meaning": "外围的的；末梢的",
+        "phonetic": "pə'rɪf(ə)r(ə)l",
+        "pos": "adj.",
+        "word": "peripheral"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…机场周边。",
+        "example_en": "...the perimeter of the airport.",
+        "id": 3966,
+        "meaning": "周（边）；周长",
+        "phonetic": "pə'rɪmɪtə",
+        "pos": "n.",
+        "word": "perimeter"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她在获得那个职位之前不过是个无名之辈。",
+        "example_en": "She wasn't anybody before she got that job.",
+        "id": 3967,
+        "meaning": "重要人物",
+        "phonetic": "",
+        "pos": "n.",
+        "word": "anybody"
+      },
+      {
+        "distractors": [],
+        "example_cn": "你可以把孩子交给比利，他非常可靠。",
+        "example_en": "You can leave the children with Billy – he’s very responsible.",
+        "id": 3968,
+        "meaning": "可靠的；责任重大的",
+        "phonetic": "rɪ'spɒnsɪb(ə)l",
+        "pos": "adj.",
+        "word": "responsible"
+      },
+      {
+        "distractors": [],
+        "example_cn": "现在我觉得这事一点都无所谓了。",
+        "example_en": "I don’t suppose it is of any consequence now.",
+        "id": 3969,
+        "meaning": "重要（性），重大意义",
+        "phonetic": "'kɒnsɪkw(ə)ns",
+        "pos": "n.",
+        "word": "consequence"
+      },
+      {
+        "distractors": [],
+        "example_cn": "属45岁以上年龄组的人",
+        "example_en": "people in the over-45 age category",
+        "id": 3970,
+        "meaning": "种类，类目；范畴",
+        "phonetic": "'kætɪg(ə)rɪ",
+        "pos": "n.",
+        "word": "category"
+      },
+      {
+        "distractors": [],
+        "example_cn": "已有七种猛禽被观察到。",
+        "example_en": "Seven species of birds of prey have been observed.",
+        "id": 3971,
+        "meaning": "种，物种；种类",
+        "phonetic": "'spiːʃiːz; -ʃɪz; 'spiːs-",
+        "pos": "n.",
+        "word": "species"
+      },
+      {
+        "distractors": [],
+        "example_cn": "开怀大笑",
+        "example_en": "a hearty laugh",
+        "id": 3972,
+        "meaning": "热情友好的；丰盛的",
+        "phonetic": "'hɑːtɪ",
+        "pos": "adj.",
+        "word": "hearty"
+      },
+      {
+        "distractors": [],
+        "example_cn": "每个原子团簇是由中子和质子组成的。",
+        "example_en": "Each atomic cluster is made up of neutrons and protons.",
+        "id": 3973,
+        "meaning": "中子",
+        "phonetic": "'njuːtrɒn",
+        "pos": "n.",
+        "word": "neutron"
+      },
+      {
+        "distractors": [],
+        "example_cn": "化学家在实验中分离出了一种中间体。",
+        "example_en": "The chemist isolated an intermediate during the experiment.",
+        "id": 3974,
+        "meaning": "中间体；调解人",
+        "phonetic": ",ɪntə'miːdɪət",
+        "pos": "n.",
+        "word": "intermediate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "原子内的一个中子衰变后会产生一个质子、一个电子和一个中微子。",
+        "example_en": "When a neutron inside an atom decays, it produces a proton, an electron, and a neutrino.",
+        "id": 3975,
+        "meaning": "质子，氕核",
+        "phonetic": "'prəʊtɒn",
+        "pos": "n.",
+        "word": "proton"
+      },
+      {
+        "distractors": [],
+        "example_cn": "不同年龄的儿童和成人在思维方式上有着质的差异。",
+        "example_en": "There are qualitative differences in the way children of different ages and adults think.",
+        "id": 3976,
+        "meaning": "质的；定性的",
+        "phonetic": "'kwɒlɪtətɪv",
+        "pos": "adj.",
+        "word": "qualitative"
+      },
+      {
+        "distractors": [],
+        "example_cn": "警方被控捏造证据。",
+        "example_en": "The police were accused of fabricating evidence.",
+        "id": 3977,
+        "meaning": "捏造；制作",
+        "phonetic": "'fæbrɪkeɪt",
+        "pos": "v.",
+        "word": "fabricate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的叙述从头到尾都是编造出来的。",
+        "example_en": "Her story was a complete fabrication from start to finish.",
+        "id": 3978,
+        "meaning": "捏造；制作",
+        "phonetic": "fæbrɪ'keɪʃ(ə)n",
+        "pos": "n.",
+        "word": "fabrication"
+      },
+      {
+        "distractors": [],
+        "example_cn": "大部分救援工作都由志愿人员完成。",
+        "example_en": "Most of the relief work was done by volunteers.",
+        "id": 3979,
+        "meaning": "志愿者",
+        "phonetic": ",vɒlən'tɪə",
+        "pos": "n.",
+        "word": "volunteer"
+      },
+      {
+        "distractors": [],
+        "example_cn": "总统谴责参众两院未在100天内通过那些法案。",
+        "example_en": "The president rebuked the House and Senate for not passing those bills within 100 days.",
+        "id": 3980,
+        "meaning": "指责，非难，斥责",
+        "phonetic": "rɪ'bjuːk",
+        "pos": "v.",
+        "word": "rebuke"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这一行为恐怕已表明了她的总体态度。",
+        "example_en": "This behaviour is indicative of her whole attitude, I’m afraid.",
+        "id": 3981,
+        "meaning": "指示的；陈述的",
+        "phonetic": "ɪn'dɪkətɪv",
+        "pos": "adj.",
+        "word": "indicative"
+      },
+      {
+        "distractors": [],
+        "example_cn": "curriculum一词的哪些含义是course没有的？",
+        "example_en": "What does the word ‘curriculum’ denote that ‘course’ does not?",
+        "id": 3982,
+        "meaning": "指示，意味着",
+        "phonetic": "dɪ'nəʊt",
+        "pos": "v.",
+        "word": "denote"
+      },
+      {
+        "distractors": [],
+        "example_cn": "驾驶教练",
+        "example_en": "a driving instructor",
+        "id": 3983,
+        "meaning": "指导者，教员",
+        "phonetic": "ɪn'strʌktə",
+        "pos": "n.",
+        "word": "instructor"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这楼层已定为无烟区。",
+        "example_en": "This floor has been designated a no-smoking area.",
+        "id": 3984,
+        "meaning": "指定；指示；指明",
+        "phonetic": "'dezɪgneɪt",
+        "pos": "v.",
+        "word": "designate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "反抗殖民统治的斗争",
+        "example_en": "the struggle against colonial rule",
+        "id": 3985,
+        "meaning": "殖民地的，殖民的",
+        "phonetic": "kə'ləʊnɪəl",
+        "pos": "adj.",
+        "word": "colonial"
+      },
+      {
+        "distractors": [],
+        "example_cn": "17岁时她找到了自己真正的使命——当一名作家。",
+        "example_en": "At 17 she found her true vocation as a writer.",
+        "id": 3986,
+        "meaning": "职业，行业",
+        "phonetic": "və(ʊ)'keɪʃ(ə)n",
+        "pos": "n.",
+        "word": "vocation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "该城镇因其热闹的露天市场而出名。",
+        "example_en": "The town is notable for its busy open-air market.",
+        "id": 3987,
+        "meaning": "值得注意的；著名的",
+        "phonetic": "'nəʊtəb(ə)l",
+        "pos": "adj.",
+        "word": "notable"
+      },
+      {
+        "distractors": [],
+        "example_cn": "结果令人振奋，值得进一步调查研究。",
+        "example_en": "The results have been encouraging enough to merit further investigation.",
+        "id": 3988,
+        "meaning": "值得；应受赏（罚）",
+        "phonetic": "'merɪt",
+        "pos": "v.",
+        "word": "merit"
+      },
+      {
+        "distractors": [],
+        "example_cn": "编篮子的人",
+        "example_en": "basket weavers",
+        "id": 3989,
+        "meaning": "织布工，编织者",
+        "phonetic": "'wiːvə",
+        "pos": "n.",
+        "word": "weaver"
+      }
+    ]
+  },
+  {
+    "unit_id": 156,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "出事以后她只得使用支架。",
+        "example_en": "She had to wear a brace after the accident.",
+        "id": 3990,
+        "meaning": "支柱",
+        "phonetic": "",
+        "pos": "n.",
+        "word": "brace"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我可以用支票付款吗？",
+        "example_en": "Can I pay by check?",
+        "id": 3991,
+        "meaning": "支票；帐单",
+        "phonetic": "tʃek",
+        "pos": "n.",
+        "word": "check"
+      },
+      {
+        "distractors": [],
+        "example_cn": "任何提案须有委员会其他两位委员附议。",
+        "example_en": "Any proposal must be seconded by two other members of the committee.",
+        "id": 3992,
+        "meaning": "支持",
+        "phonetic": "'sek(ə)nd",
+        "pos": "v.",
+        "word": "second"
+      },
+      {
+        "distractors": [],
+        "example_cn": "学习用罗盘辨别方向",
+        "example_en": "learning to take a compass bearing",
+        "id": 3993,
+        "meaning": "方位；（机器的）承座；轴承；忍受",
+        "phonetic": "'beərɪŋ",
+        "pos": "n.",
+        "word": "bearing"
+      },
+      {
+        "distractors": [],
+        "example_cn": "精神分裂症最常见的症状之一是幻听。",
+        "example_en": "One of the most common symptoms of schizophrenia is hearing imaginary voices.",
+        "id": 3994,
+        "meaning": "症状；征兆，征候",
+        "phonetic": "",
+        "pos": "n.",
+        "word": "symptom"
+      },
+      {
+        "distractors": [],
+        "example_cn": "该政权清除了大多数反对者。",
+        "example_en": "The regime got rid of most of its opponents.",
+        "id": 3995,
+        "meaning": "政权，政体；制度",
+        "phonetic": "reɪ'ʒiːm",
+        "pos": "n.",
+        "word": "regime"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我猜她的政治观点一定相当保守。",
+        "example_en": "I assume her politics must be fairly conservative.",
+        "id": 3996,
+        "meaning": "政纲，政见，策略",
+        "phonetic": "'pɒlɪtɪks",
+        "pos": "n.",
+        "word": "politics"
+      },
+      {
+        "distractors": [],
+        "example_cn": "强硬的妇女权利政纲",
+        "example_en": "a strong women’s rights platform",
+        "id": 3997,
+        "meaning": "政纲，党纲，宣言",
+        "phonetic": "'plætfɔːm",
+        "pos": "n.",
+        "word": "platform"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这则报道仍未得到官方证实。",
+        "example_en": "There has still been no official confirmation of the report.",
+        "id": 3998,
+        "meaning": "证实，确定；确认",
+        "phonetic": "kɒnfə'meɪʃ(ə)n",
+        "pos": "n.",
+        "word": "confirmation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "莫尔托先生已经同意出庭作证。",
+        "example_en": "Mr Molto has agreed to testify at the trial.",
+        "id": 3999,
+        "meaning": "作证；证明，证实",
+        "phonetic": "'testɪfaɪ",
+        "pos": "v.",
+        "word": "testify"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他获准觐见教皇。",
+        "example_en": "He was granted an audience with the Pope.",
+        "id": 4000,
+        "meaning": "正式会见；拜会",
+        "phonetic": "'ɔːdɪəns",
+        "pos": "n.",
+        "word": "audience"
+      },
+      {
+        "distractors": [],
+        "example_cn": "作家用英语正确地表达自己的意思。",
+        "example_en": "The writer expresses himself correctly in English.",
+        "id": 4001,
+        "meaning": "正确地，恰当地",
+        "phonetic": "kə'rek(t)lɪ",
+        "pos": "adv.",
+        "word": "correctly"
+      },
+      {
+        "distractors": [],
+        "example_cn": "化验结果呈阳性。",
+        "example_en": "The test results came back positive.",
+        "id": 4002,
+        "meaning": "正的，阳性的；正的，正极的，阳性的；正的，正数的",
+        "phonetic": "'pɒzɪtɪv",
+        "pos": "adj.",
+        "word": "positive"
+      },
+      {
+        "distractors": [],
+        "example_cn": "关系的正常化",
+        "example_en": "the normalization of relations",
+        "id": 4003,
+        "meaning": "正常化，标准化",
+        "phonetic": ",nɔːməlaɪ'zeɪʃən",
+        "pos": "n.",
+        "word": "normalization"
+      },
+      {
+        "distractors": [],
+        "example_cn": "沙土里的一个爪印表明附近有老虎。",
+        "example_en": "A paw print in the dust was a sign that a tiger was close.",
+        "id": 4004,
+        "meaning": "征兆，迹象，病症",
+        "phonetic": "saɪn",
+        "pos": "n.",
+        "word": "sign"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一个被压迫国家的人民顺从他们的征服者，是因为他们想活下去。",
+        "example_en": "The people of an oppressed country obey their conquerors because they want to go on living.",
+        "id": 4005,
+        "meaning": "征服者，胜利者",
+        "phonetic": "'kɒŋk(ə)rə(r)",
+        "pos": "n.",
+        "word": "conqueror"
+      },
+      {
+        "distractors": [],
+        "example_cn": "政治争议",
+        "example_en": "a political controversy",
+        "id": 4006,
+        "meaning": "争论，辩论，争吵",
+        "phonetic": "'kɒntrəvɜːsɪ; kən'trɒvəsɪ",
+        "pos": "n.",
+        "word": "controversy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "起义受到了残酷的镇压。",
+        "example_en": "The uprising was ruthlessly suppressed.",
+        "id": 4007,
+        "meaning": "镇压；抑制；禁止发表；封锁；查禁",
+        "phonetic": "sə'pres",
+        "pos": "v.",
+        "word": "suppress"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一阵狂风掠过山谷。",
+        "example_en": "A gust of wind drove down the valley.",
+        "id": 4008,
+        "meaning": "阵风，一阵狂风",
+        "phonetic": "gʌst",
+        "pos": "n.",
+        "word": "gust"
+      },
+      {
+        "distractors": [],
+        "example_cn": "门诊预约",
+        "example_en": "an appointment at an outpatient clinic",
+        "id": 4009,
+        "meaning": "诊所，医务室；会诊；会诊时间；门诊时间",
+        "phonetic": "'klɪnɪk",
+        "pos": "n.",
+        "word": "clinic"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这些士兵被诊断为患了流感。",
+        "example_en": "The soldiers were diagnosed as having flu.",
+        "id": 4010,
+        "meaning": "诊断（疾病）",
+        "phonetic": "'daɪəgnəʊz; -'nəʊz",
+        "pos": "v.",
+        "word": "diagnose"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我不怀疑她的诚意，但我认为她没弄清楚事实。",
+        "example_en": "I don’t doubt her sincerity, but I think she’s got her facts wrong.",
+        "id": 4011,
+        "meaning": "真诚，诚意；真实",
+        "phonetic": "sɪn'serətɪ",
+        "pos": "n.",
+        "word": "sincerity"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在婚姻中，男人承诺要爱护妻子。",
+        "example_en": "In marriage, a man promises to cherish his wife.",
+        "id": 4012,
+        "meaning": "珍爱；怀有（感情）",
+        "phonetic": "'tʃerɪʃ",
+        "pos": "v.",
+        "word": "cherish"
+      },
+      {
+        "distractors": [],
+        "example_cn": "现在侦探们正在呼吁昨晚可能看到任何可疑情况的人出来作证。",
+        "example_en": "Now detectives are appealing for witnesses who may have seen anything suspicious last night.",
+        "id": 4013,
+        "meaning": "侦探，警探；私人侦探，私家侦探",
+        "phonetic": "dɪ'tektɪv",
+        "pos": "n.",
+        "word": "detective"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这一悲剧事件突显了立即采取行动的必要性。",
+        "example_en": "This tragic incident underlines the need for immediate action.",
+        "id": 4014,
+        "meaning": "着重；强调",
+        "phonetic": "ʌndə'laɪn",
+        "pos": "v.",
+        "word": "underline"
+      },
+      {
+        "distractors": [],
+        "example_cn": "将胡椒子储藏在密封容器里，当你需要的时候把它磨成粉。",
+        "example_en": "Store the peppercorns in an airtight container and grind the pepper as you need it.",
+        "id": 4015,
+        "meaning": "磨碎，碾碎，把...磨成粉",
+        "phonetic": "graɪnd",
+        "pos": "v.",
+        "word": "grind"
+      },
+      {
+        "distractors": [],
+        "example_cn": "它们经常可以以折扣价买到。",
+        "example_en": "They are often available at a discount.",
+        "id": 4016,
+        "meaning": "折扣",
+        "phonetic": "'dɪskaʊnt",
+        "pos": "n.",
+        "word": "discount"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这种奶酪名叫Dolcelatte，字面意思是 “甜牛奶” 。",
+        "example_en": "The name of the cheese is Dolcelatte, literally meaning ‘sweet milk’.",
+        "id": 4017,
+        "meaning": "照字义，逐字地",
+        "phonetic": "'lɪt(ə)rəlɪ",
+        "pos": "adv.",
+        "word": "literally"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一支蜡烛照亮了他的脸。",
+        "example_en": "A single candle illuminated his face.",
+        "id": 4018,
+        "meaning": "照明，照亮；阐明",
+        "phonetic": "ɪ'l(j)uːmɪneɪt",
+        "pos": "v.",
+        "word": "illuminate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "罗伯特召唤服务员结账。",
+        "example_en": "Robert summoned the waiter for the bill.",
+        "id": 4019,
+        "meaning": "召唤；鼓起（勇气）",
+        "phonetic": "'sʌmən",
+        "pos": "v.",
+        "word": "summon"
+      },
+      {
+        "distractors": [],
+        "example_cn": "牛群在湿地上吃草。",
+        "example_en": "Cows were grazing on the marshes.",
+        "id": 4020,
+        "meaning": "沼泽地，湿地",
+        "phonetic": "mɑːʃ",
+        "pos": "n.",
+        "word": "marsh"
+      },
+      {
+        "distractors": [],
+        "example_cn": "招待朋友",
+        "example_en": "the entertainment of friends",
+        "id": 4021,
+        "meaning": "招待，招待会",
+        "phonetic": "entə'teɪnm(ə)nt",
+        "pos": "n.",
+        "word": "entertainment"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在英国工业界，学位反倒是个累赘。",
+        "example_en": "A degree is more of a hindrance than a help in British industry.",
+        "id": 4022,
+        "meaning": "障碍，妨碍",
+        "phonetic": "'hɪndr(ə)ns",
+        "pos": "n.",
+        "word": "hindrance"
+      },
+      {
+        "distractors": [],
+        "example_cn": "你没有关花园的水管。",
+        "example_en": "You've left the garden hose on.",
+        "id": 4023,
+        "meaning": "软管；袜类（包括连裤袜、长筒袜、短袜）",
+        "phonetic": "həʊz",
+        "pos": "n.",
+        "word": "hose"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们坐在沙发上聊天。",
+        "example_en": "We sat on the sofa and talked.",
+        "id": 4024,
+        "meaning": "长沙发，沙发",
+        "phonetic": "'səʊfə",
+        "pos": "n.",
+        "word": "sofa"
+      },
+      {
+        "distractors": [],
+        "example_cn": "有伸缩性的橡胶",
+        "example_en": "tensile rubber",
+        "id": 4025,
+        "meaning": "张力的；能伸长的",
+        "phonetic": "'tensaɪl",
+        "pos": "adj.",
+        "word": "tensile"
+      },
+      {
+        "distractors": [],
+        "example_cn": "现代战争的真实面貌",
+        "example_en": "the realities of modern warfare",
+        "id": 4026,
+        "meaning": "战争，战争状态",
+        "phonetic": "'wɔːfeə",
+        "pos": "n.",
+        "word": "warfare"
+      },
+      {
+        "distractors": [],
+        "example_cn": "曾在那场肮脏的战争中与这支部队交战的臭名昭著的蒙特内罗游击队",
+        "example_en": "...the notorious Montonero guerrilla group who did battle with the army during the dirty war...",
+        "id": 4027,
+        "meaning": "战斗，与…作战",
+        "phonetic": "'bæt(ə)l",
+        "pos": "v.",
+        "word": "battle"
+      },
+      {
+        "distractors": [],
+        "example_cn": "社会中的主导群体",
+        "example_en": "the predominant group in society",
+        "id": 4028,
+        "meaning": "占优势的；主要的",
+        "phonetic": "prɪ'dɒmɪnənt",
+        "pos": "adj.",
+        "word": "predominant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她张开双臂。",
+        "example_en": "She unfolded her arms.",
+        "id": 4029,
+        "meaning": "展开；展现，呈现",
+        "phonetic": "ʌn'fəʊld",
+        "pos": "v.",
+        "word": "unfold"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他的湿衬衫紧紧地贴在身上。",
+        "example_en": "His wet shirt clung to his body.",
+        "id": 4030,
+        "meaning": "粘住；依附；坚持",
+        "phonetic": "klɪŋ",
+        "pos": "v.",
+        "word": "cling"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这液体冷却后会变黏稠。",
+        "example_en": "As the liquid cools, it becomes viscous.",
+        "id": 4031,
+        "meaning": "粘滞的，粘性的",
+        "phonetic": "'vɪskəs",
+        "pos": "adj.",
+        "word": "viscous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这三年的课程是作为连贯的整体来安排的。",
+        "example_en": "The three years of the course are planned as a coherent whole.",
+        "id": 4032,
+        "meaning": "（文章、观点等）连贯的，有条理的，一致的",
+        "phonetic": "kə(ʊ)'hɪər(ə)nt",
+        "pos": "adj.",
+        "word": "coherent"
+      },
+      {
+        "distractors": [],
+        "example_cn": "相册",
+        "example_en": "a photograph album",
+        "id": 4033,
+        "meaning": "（收存照片或邮票的） 册子",
+        "phonetic": "'ælbəm",
+        "pos": "n.",
+        "word": "album"
+      },
+      {
+        "distractors": [],
+        "example_cn": "用胶把这布粘在窗户四周。",
+        "example_en": "Glue the fabric around the window.",
+        "id": 4034,
+        "meaning": "粘牢",
+        "phonetic": "gluː",
+        "pos": "v.",
+        "word": "glue"
+      },
+      {
+        "distractors": [],
+        "example_cn": "绝大部分人造关节是被黏结复位的。",
+        "example_en": "Most artificial joints are cemented into place.",
+        "id": 4035,
+        "meaning": "粘结",
+        "phonetic": "sɪ'ment",
+        "pos": "v.",
+        "word": "cement"
+      },
+      {
+        "distractors": [],
+        "example_cn": "微小的粒子紧贴着种子。",
+        "example_en": "Small particles adhere to the seed.",
+        "id": 4036,
+        "meaning": "粘附；追随；坚持",
+        "phonetic": "əd'hɪə",
+        "pos": "v.",
+        "word": "adhere"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一张纸条",
+        "example_en": "a strip of paper",
+        "id": 4037,
+        "meaning": "窄条，长带",
+        "phonetic": "strɪp",
+        "pos": "n.",
+        "word": "strip"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一天， 蚱蜢碰到了一只正在花园里干活的蚂蚁。",
+        "example_en": "One day a grasshopper came upon an ant at work in a garden.",
+        "id": 4038,
+        "meaning": "蚱蜢，蝗虫，蚂蚱",
+        "phonetic": "'grɑːshɒpə",
+        "pos": "n.",
+        "word": "grasshopper"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他朝同伴眨眨眼。",
+        "example_en": "He winked an eye at his companion.",
+        "id": 4039,
+        "meaning": "眨眼；使眼色",
+        "phonetic": "wɪŋk",
+        "pos": "v.",
+        "word": "wink"
+      }
+    ]
+  },
+  {
+    "unit_id": 157,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "教育不必只是与推进你的事业有关。",
+        "example_en": "Education needn't only be about furthering your career.",
+        "id": 4040,
+        "meaning": "增进",
+        "phonetic": "'fɜːðə",
+        "pos": "v.",
+        "word": "further"
+      },
+      {
+        "distractors": [],
+        "example_cn": "将会有加减乘除的简单测试。",
+        "example_en": "There will be simple tests in addition, subtraction, multiplication, and division.",
+        "id": 4041,
+        "meaning": "乘法；增加",
+        "phonetic": ",mʌltɪplɪ'keɪʃ(ə)n",
+        "pos": "n.",
+        "word": "multiplication"
+      },
+      {
+        "distractors": [],
+        "example_cn": "承租人造成任何损坏都要负法律责任。",
+        "example_en": "Tenants have legal liability for any damage they cause.",
+        "id": 4042,
+        "meaning": "责任；债务",
+        "phonetic": "laɪə'bɪlɪtɪ",
+        "pos": "n.",
+        "word": "liability"
+      },
+      {
+        "distractors": [],
+        "example_cn": "造船厂",
+        "example_en": "a shipbuilding yard",
+        "id": 4043,
+        "meaning": "造船（业），造船学",
+        "phonetic": "'ʃɪp,bɪldɪŋ",
+        "pos": "n.",
+        "word": "shipbuilding"
+      },
+      {
+        "distractors": [],
+        "example_cn": "皇家铸币局发行的硬币",
+        "example_en": "coins issued by the Royal Mint",
+        "id": 4044,
+        "meaning": "造币厂；巨额钱财",
+        "phonetic": "mɪnt",
+        "pos": "n.",
+        "word": "mint"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在蛋糕上挖个洞，填入奶油。",
+        "example_en": "Hollow out the cake and fill it with cream.",
+        "id": 4045,
+        "meaning": "凿空，挖空",
+        "phonetic": "'hɒləʊ",
+        "pos": "v.",
+        "word": "hollow"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他工作时喜欢唱赞美诗。",
+        "example_en": "He liked to sing hymns as he worked.",
+        "id": 4046,
+        "meaning": "赞美诗，圣歌；赞歌",
+        "phonetic": "hɪm",
+        "pos": "n.",
+        "word": "hymn"
+      },
+      {
+        "distractors": [],
+        "example_cn": "本杂志决不美化各种犯罪团伙。",
+        "example_en": "This magazine in no way glorifies gangs.",
+        "id": 4047,
+        "meaning": "赞美；颂扬（上帝）",
+        "phonetic": "'glɔːrɪfaɪ",
+        "pos": "v.",
+        "word": "glorify"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们的游艇设施完备，首尾有两个双人舱。",
+        "example_en": "Our yacht was well equipped with two double cabins fore and aft.",
+        "id": 4048,
+        "meaning": "在（或向）船头；在（或向）飞行器头部",
+        "phonetic": "fɔː",
+        "pos": "adv.",
+        "word": "fore"
+      },
+      {
+        "distractors": [],
+        "example_cn": "见汤普森（1983）以及书中引用的参考资料。",
+        "example_en": "See Thompson, 1983, and the references cited therein.",
+        "id": 4049,
+        "meaning": "在那里",
+        "phonetic": "ðeər'ɪn",
+        "pos": "adv.",
+        "word": "therein"
+      },
+      {
+        "distractors": [],
+        "example_cn": "克里斯要去国外工作。",
+        "example_en": "Chris is going to work overseas.",
+        "id": 4050,
+        "meaning": "在海外，（向）国外",
+        "phonetic": "əʊvə'siːz",
+        "pos": "adv.",
+        "word": "overseas"
+      },
+      {
+        "distractors": [],
+        "example_cn": "几只死鸟被冲上了岸。",
+        "example_en": "Several dead birds had been washed ashore.",
+        "id": 4051,
+        "meaning": "在岸上，上岸",
+        "phonetic": "ə'ʃɔː",
+        "pos": "adv.",
+        "word": "ashore"
+      },
+      {
+        "distractors": [],
+        "example_cn": "你可以把汽车停在我们家屋外。",
+        "example_en": "You can park your car outside our house.",
+        "id": 4052,
+        "meaning": "在…外，向…外",
+        "phonetic": "aʊt'saɪd; 'aʊtsaɪd",
+        "pos": "prep.",
+        "word": "outside"
+      },
+      {
+        "distractors": [],
+        "example_cn": "主人懒得给这牛打上烙印。",
+        "example_en": "The owner couldn't be bothered to brand the cattle.",
+        "id": 4053,
+        "meaning": "在…上打烙印",
+        "phonetic": "brænd",
+        "pos": "v.",
+        "word": "brand"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他过了马路，然后在中央公园旁边走着。",
+        "example_en": "He crossed the street and walked alongside Central Park.",
+        "id": 4054,
+        "meaning": "在…旁边",
+        "phonetic": "əlɒŋ'saɪd",
+        "pos": "prep.",
+        "word": "alongside"
+      },
+      {
+        "distractors": [],
+        "example_cn": "鸡和鹅在后院随意溜达。",
+        "example_en": "Chickens and geese roam freely in the back yard.",
+        "id": 4055,
+        "meaning": "在…漫步，漫游",
+        "phonetic": "rəʊm",
+        "pos": "v.",
+        "word": "roam"
+      },
+      {
+        "distractors": [],
+        "example_cn": "暑假期间你在家吗？",
+        "example_en": "Will you be home over the summer vacation?",
+        "id": 4056,
+        "meaning": "在（做）…时",
+        "phonetic": "'əʊvə",
+        "pos": "prep.",
+        "word": "over"
+      },
+      {
+        "distractors": [],
+        "example_cn": "科学家研究了海豚的繁殖情况、进食规律和健康状况。",
+        "example_en": "Scientists studied the reproduction, diet, and health of the dolphins.",
+        "id": 4057,
+        "meaning": "再生（产）；繁殖",
+        "phonetic": "riːprə'dʌkʃ(ə)n",
+        "pos": "n.",
+        "word": "reproduction"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这些螺栓符合所有的工程设计规格。",
+        "example_en": "The bolts met all the engineering specifications.",
+        "id": 4058,
+        "meaning": "规格；明确说明，详述",
+        "phonetic": ",spesɪfɪ'keɪʃ(ə)n",
+        "pos": "n.",
+        "word": "specification"
+      },
+      {
+        "distractors": [],
+        "example_cn": "以失败告终的第一次婚姻",
+        "example_en": "a disastrous first marriage",
+        "id": 4059,
+        "meaning": "灾难性的；悲惨的",
+        "phonetic": "dɪ'zɑːstrəs",
+        "pos": "adj.",
+        "word": "disastrous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "全部运算在三秒内完成。",
+        "example_en": "The whole operation is performed in less than three seconds.",
+        "id": 4060,
+        "meaning": "运算",
+        "phonetic": "ɒpə'reɪʃ(ə)n",
+        "pos": "n.",
+        "word": "operation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "货运公司",
+        "example_en": "freight services",
+        "id": 4061,
+        "meaning": "货运；运费",
+        "phonetic": "freɪt",
+        "pos": "n.",
+        "word": "freight"
+      },
+      {
+        "distractors": [],
+        "example_cn": "运动力的增加",
+        "example_en": "an increase in locomotive power",
+        "id": 4062,
+        "meaning": "运动的；机动",
+        "phonetic": "ləʊkə'məʊtɪv",
+        "pos": "adj.",
+        "word": "locomotive"
+      },
+      {
+        "distractors": [],
+        "example_cn": "对月球表面的研究",
+        "example_en": "studies of the lunar surface",
+        "id": 4063,
+        "meaning": "月亮的",
+        "phonetic": "'luːnə",
+        "pos": "adj.",
+        "word": "lunar"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她承担了监督选举的任务。",
+        "example_en": "She undertook the task of monitoring the elections.",
+        "id": 4064,
+        "meaning": "从事；承诺",
+        "phonetic": "ʌndə'teɪk",
+        "pos": "v.",
+        "word": "undertake"
+      },
+      {
+        "distractors": [],
+        "example_cn": "原始社会",
+        "example_en": "a primitive society",
+        "id": 4065,
+        "meaning": "远古的，未开化的",
+        "phonetic": "'prɪmɪtɪv",
+        "pos": "adj.",
+        "word": "primitive"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…国会大厦的穹顶。",
+        "example_en": "...the dome of the Capitol.",
+        "id": 4066,
+        "meaning": "圆屋顶，拱顶",
+        "phonetic": "dəʊm",
+        "pos": "n.",
+        "word": "dome"
+      },
+      {
+        "distractors": [],
+        "example_cn": "气体储存在圆筒内。",
+        "example_en": "The gases are stored in cylinders.",
+        "id": 4067,
+        "meaning": "圆筒；柱（面）；汽缸",
+        "phonetic": "'sɪlɪndə",
+        "pos": "n.",
+        "word": "cylinder"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的失踪一直没有得到令人信服的解释。",
+        "example_en": "Her disappearance has never been satisfactorily explained.",
+        "id": 4068,
+        "meaning": "圆满地",
+        "phonetic": ",sætɪs'fæktərəlɪ",
+        "pos": "adv.",
+        "word": "satisfactorily"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在一个原子的核内，中子和质子聚合在一起。",
+        "example_en": "Neutrons and protons are bound together in the nucleus of an atom.",
+        "id": 4069,
+        "meaning": "原子核，细胞核",
+        "phonetic": "'njuːklɪəs",
+        "pos": "n.",
+        "word": "nucleus"
+      },
+      {
+        "distractors": [],
+        "example_cn": "现代自行车的雏形",
+        "example_en": "the prototype of the modern bicycle",
+        "id": 4070,
+        "meaning": "原型；典型，范例",
+        "phonetic": "'prəʊtətaɪp",
+        "pos": "n.",
+        "word": "prototype"
+      },
+      {
+        "distractors": [],
+        "example_cn": "每种语言都有不同的元音系统。",
+        "example_en": "Each language has a different vowel system.",
+        "id": 4071,
+        "meaning": "元音；元音字母",
+        "phonetic": "'vaʊəl",
+        "pos": "n.",
+        "word": "vowel"
+      },
+      {
+        "distractors": [],
+        "example_cn": "朱可夫元帅",
+        "example_en": "Marshal Zhukov",
+        "id": 4072,
+        "meaning": "元帅；陆军元帅",
+        "phonetic": "'mɑːʃ(ə)l",
+        "pos": "n.",
+        "word": "marshal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "你随时可以取消订阅。",
+        "example_en": "You may cancel your subscription at any time.",
+        "id": 4073,
+        "meaning": "订阅（费）；用户费（的缴纳）",
+        "phonetic": "səb'skrɪpʃ(ə)n",
+        "pos": "n.",
+        "word": "subscription"
+      },
+      {
+        "distractors": [],
+        "example_cn": "先知以利亚",
+        "example_en": "the prophet Elijah",
+        "id": 4074,
+        "meaning": "预言家，先知",
+        "phonetic": "'prɒfɪt",
+        "pos": "n.",
+        "word": "prophet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "以赛亚的预言",
+        "example_en": "the prophecy of Isaiah",
+        "id": 4075,
+        "meaning": "预言；预言能力",
+        "phonetic": "'prɒfɪsɪ",
+        "pos": "n.",
+        "word": "prophecy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这些数据可用于进行有用的经济预测。",
+        "example_en": "The data can be used to make useful economic predictions .",
+        "id": 4076,
+        "meaning": "预言，预告；预报",
+        "phonetic": "prɪ'dɪkʃ(ə)n",
+        "pos": "n.",
+        "word": "prediction"
+      },
+      {
+        "distractors": [],
+        "example_cn": "...一个可以预调的电脑定时器。",
+        "example_en": "...a computerized timer that can be preset.",
+        "id": 4077,
+        "meaning": "预先装置",
+        "phonetic": "priː'set",
+        "pos": "v.",
+        "word": "preset"
+      },
+      {
+        "distractors": [],
+        "example_cn": "需要事先告诉警察这种情况怎样处理。",
+        "example_en": "The police need to be briefed beforehand on how to deal with this sort of situation.",
+        "id": 4078,
+        "meaning": "预先；提前地",
+        "phonetic": "bɪ'fɔːhænd",
+        "pos": "adv.",
+        "word": "beforehand"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们的预算很紧。",
+        "example_en": "We had a really tight budget.",
+        "id": 4079,
+        "meaning": "预算；〔政府的〕",
+        "phonetic": "'bʌdʒɪt",
+        "pos": "n.",
+        "word": "budget"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我把你的名字写在名单上了，估计不会有什么问题。",
+        "example_en": "I’ve put your name on the list and I don’t foresee any problems.",
+        "id": 4080,
+        "meaning": "预见，预知，看穿",
+        "phonetic": "fɔː'siː",
+        "pos": "v.",
+        "word": "foresee"
+      },
+      {
+        "distractors": [],
+        "example_cn": "消防官员",
+        "example_en": "a fire prevention officer",
+        "id": 4081,
+        "meaning": "预防，阻止，妨碍",
+        "phonetic": "prɪ'venʃn",
+        "pos": "n.",
+        "word": "prevention"
+      },
+      {
+        "distractors": [],
+        "example_cn": "桌上的花瓶里插着一束郁金香。",
+        "example_en": "In a vase on the table stood a tulip.",
+        "id": 4082,
+        "meaning": "郁金香",
+        "phonetic": "'tjuːlɪp",
+        "pos": "n.",
+        "word": "tulip"
+      },
+      {
+        "distractors": [],
+        "example_cn": "语调类型",
+        "example_en": "intonation patterns",
+        "id": 4083,
+        "meaning": "语调，声调；发声",
+        "phonetic": "ɪntə'neɪʃ(ə)n",
+        "pos": "n.",
+        "word": "intonation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "主宰我们世界的宇宙法则",
+        "example_en": "the cosmic laws governing our world",
+        "id": 4084,
+        "meaning": "宇宙的；广大无边的，极大的",
+        "phonetic": "'kɒzmɪk",
+        "pos": "adj.",
+        "word": "cosmic"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…宇宙的自然法则。",
+        "example_en": "...the natural laws of the cosmos.",
+        "id": 4085,
+        "meaning": "宇宙",
+        "phonetic": "'kɒzmɒs",
+        "pos": "n.",
+        "word": "cosmos"
+      },
+      {
+        "distractors": [],
+        "example_cn": "把包折叠起来时，其底部与一边就重合了。",
+        "example_en": "When the bag is folded, the bottom overlaps one side.",
+        "id": 4086,
+        "meaning": "与…交搭，重叠",
+        "phonetic": "əʊvə'læp",
+        "pos": "v.",
+        "word": "overlap"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他辩解说自己是“为了供养妻子和猫儿被迫去抢劫的”。",
+        "example_en": "He excused himself by saying he was 'forced to rob to maintain my wife and cat.'",
+        "id": 4087,
+        "meaning": "为…辩解；使免除",
+        "phonetic": "ɪk'skjuːz; ek-",
+        "pos": "v.",
+        "word": "excuse"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的死真是无谓地浪费生命。",
+        "example_en": "Her death seemed such a senseless waste of life.",
+        "id": 4088,
+        "meaning": "愚蠢的，无意义的",
+        "phonetic": "'senslɪs",
+        "pos": "adj.",
+        "word": "senseless"
+      },
+      {
+        "distractors": [],
+        "example_cn": "史蒂夫忍俊不禁。",
+        "example_en": "Steve couldn’t hide his amusement.",
+        "id": 4089,
+        "meaning": "乐趣；娱乐，消遣",
+        "phonetic": "ə'mjuːzm(ə)nt",
+        "pos": "n.",
+        "word": "amusement"
+      }
+    ]
+  },
+  {
+    "unit_id": 158,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "他的船被一枚鱼雷炸毁了。",
+        "example_en": "His ship was blown up by a torpedo.",
+        "id": 4090,
+        "meaning": "鱼雷，水雷",
+        "phonetic": "tɔː'piːdəʊ",
+        "pos": "n.",
+        "word": "torpedo"
+      },
+      {
+        "distractors": [],
+        "example_cn": "要30分钟左右才能干，不过保险一点，再多10分钟吧。",
+        "example_en": "It’ll take about 30 minutes to dry but I’d allow a safety margin of, say, another 10 minutes.",
+        "id": 4091,
+        "meaning": "余地；（获胜者在时间或票数上领先的）幅度，差额；利润；赚头",
+        "phonetic": "'mɑːdʒɪn",
+        "pos": "n.",
+        "word": "margin"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他拐弯抹角地对我们说他想走了。",
+        "example_en": "He told us, in a very roundabout way, that he was thinking of leaving.",
+        "id": 4092,
+        "meaning": "转弯抹角的；迂回的",
+        "phonetic": "'raʊndəbaʊt",
+        "pos": "adj.",
+        "word": "roundabout"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一名妇女遭到持枪绑架，警方呼吁目击者挺身而出。",
+        "example_en": "Police appealed for witnesses after a woman was kidnapped at gunpoint.",
+        "id": 4093,
+        "meaning": "诱拐，绑架",
+        "phonetic": "'kɪdnæp",
+        "pos": "v.",
+        "word": "kidnap"
+      },
+      {
+        "distractors": [],
+        "example_cn": "出于内疚，他以前总是给他们买昂贵的礼物。",
+        "example_en": "He used to buy them expensive presents, out of guilt.",
+        "id": 4094,
+        "meaning": "内疚；有罪，犯罪",
+        "phonetic": "gɪlt",
+        "pos": "n.",
+        "word": "guilt"
+      },
+      {
+        "distractors": [],
+        "example_cn": "幽暗的房间",
+        "example_en": "a shadowy room",
+        "id": 4095,
+        "meaning": "有影的；幽暗的",
+        "phonetic": "'ʃædəʊɪ",
+        "pos": "adj.",
+        "word": "shadowy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "客人们应可以随意使用你们的设施。",
+        "example_en": "Guests should feel at liberty to avail themselves of your facilities.",
+        "id": 4096,
+        "meaning": "有益于，有用",
+        "phonetic": "ə'veɪl",
+        "pos": "v.",
+        "word": "avail"
+      },
+      {
+        "distractors": [],
+        "example_cn": "艾尔弗雷德雄心勃勃，一心想着发财。",
+        "example_en": "Alfred was intensely ambitious, obsessed with the idea of becoming rich.",
+        "id": 4097,
+        "meaning": "有雄心的；热望的",
+        "phonetic": "æm'bɪʃəs",
+        "pos": "adj.",
+        "word": "ambitious"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他政治上最重大的成就是废除了死刑。",
+        "example_en": "His most significant political achievement was the abolition of the death penalty.",
+        "id": 4098,
+        "meaning": "重要的，重大的，影响深远的",
+        "phonetic": "sɪg'nɪfɪk(ə)nt",
+        "pos": "adj.",
+        "word": "significant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "本协议的有效期已过。",
+        "example_en": "The period of validity of the agreement has expired.",
+        "id": 4099,
+        "meaning": "（法律上的）有效；符合逻辑，正确",
+        "phonetic": "və'lɪdɪtɪ",
+        "pos": "n.",
+        "word": "validity"
+      },
+      {
+        "distractors": [],
+        "example_cn": "有廉价机票出售",
+        "example_en": "the availability of cheap flights",
+        "id": 4100,
+        "meaning": "有效（性）；可得性",
+        "phonetic": "ə,veɪlə'bɪlətɪ",
+        "pos": "n.",
+        "word": "availability"
+      },
+      {
+        "distractors": [],
+        "example_cn": "地球有限的资源",
+        "example_en": "the earth’s finite resources",
+        "id": 4101,
+        "meaning": "有限的；有尽的",
+        "phonetic": "",
+        "pos": "adj.",
+        "word": "finite"
+      },
+      {
+        "distractors": [],
+        "example_cn": "拥有大片湖区的展望公园是所有健身迷的向往之地。",
+        "example_en": "Prospect Park, with its vast lake, is a magnet for all health freaks.",
+        "id": 4102,
+        "meaning": "有吸引力的人（或物）",
+        "phonetic": "ˈmæɡnɪt",
+        "pos": "n.",
+        "word": "magnet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "事实证明，这次广告宣传活动卓有成效。",
+        "example_en": "The advertising campaign proved very profitable.",
+        "id": 4103,
+        "meaning": "有利的；有益的",
+        "phonetic": "'prɒfɪtəb(ə)l",
+        "pos": "adj.",
+        "word": "profitable"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他现在的位置更有利。",
+        "example_en": "He was now in a more advantageous position.",
+        "id": 4104,
+        "meaning": "有利的，有助的",
+        "phonetic": "ædvən'teɪdʒəs",
+        "pos": "adj.",
+        "word": "advantageous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "员工们总是彬彬有礼、乐于帮助。",
+        "example_en": "The staff are always courteous and helpful.",
+        "id": 4105,
+        "meaning": "有礼貌的，谦恭的",
+        "phonetic": "'kɜːtjəs",
+        "pos": "adj.",
+        "word": "courteous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她脖子上戴着一串绿色的玻璃珠子。",
+        "example_en": "She wore a string of green glass beads around her neck.",
+        "id": 4106,
+        "meaning": "有孔小珠；水珠；露珠",
+        "phonetic": "biːd",
+        "pos": "n.",
+        "word": "bead"
+      },
+      {
+        "distractors": [],
+        "example_cn": "法官的判决基于一个常识性原则，即谁也不能凌驾于法律之上。",
+        "example_en": "The judge's ruling was based on the simple commonsense tenet that no man is above the law.",
+        "id": 4107,
+        "meaning": "有常识的",
+        "phonetic": "",
+        "pos": "adj.",
+        "word": "commonsense"
+      },
+      {
+        "distractors": [],
+        "example_cn": "对待教育非常守旧的态度",
+        "example_en": "a very conservative attitude to education",
+        "id": 4108,
+        "meaning": "保守的，守旧的",
+        "phonetic": "kən'sɜːvətɪv",
+        "pos": "adj.",
+        "word": "conservative"
+      },
+      {
+        "distractors": [],
+        "example_cn": "航空公司投保的保险公司为遇难者家庭的损失负法律责任。",
+        "example_en": "The airline's insurer is liable for damages to the victims' families.",
+        "id": 4109,
+        "meaning": "有（法律）责任的",
+        "phonetic": "'laɪəb(ə)l",
+        "pos": "adj.",
+        "word": "liable"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他的36英尺游艇去年夏天突然沉没了。",
+        "example_en": "His 36 ft yacht sank suddenly last summer.",
+        "id": 4110,
+        "meaning": "游艇，快艇",
+        "phonetic": "jɒt",
+        "pos": "n.",
+        "word": "yacht"
+      },
+      {
+        "distractors": [],
+        "example_cn": "核反应堆的燃料被铀235浓缩。",
+        "example_en": "The fuel was enriched with uranium 235 for the nuclear reactor.",
+        "id": 4111,
+        "meaning": "铀",
+        "phonetic": "jʊ'reɪnɪəm",
+        "pos": "n.",
+        "word": "uranium"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一艘希腊油轮已经搁浅了。",
+        "example_en": "A Greek oil tanker has run aground.",
+        "id": 4112,
+        "meaning": "油船；空中加油飞机",
+        "phonetic": "'tæŋkə",
+        "pos": "n.",
+        "word": "tanker"
+      },
+      {
+        "distractors": [],
+        "example_cn": "美国邮政",
+        "example_en": "the U.S. postal service",
+        "id": 4113,
+        "meaning": "邮政的，邮局的",
+        "phonetic": "'pəʊst(ə)l",
+        "pos": "adj.",
+        "word": "postal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "人类相比其他动物所具有的智力优势",
+        "example_en": "the intellectual superiority of humans over other animals",
+        "id": 4114,
+        "meaning": "优越（性），优势",
+        "phonetic": "suː,pɪərɪ'ɒrɪtɪ; sjuː-",
+        "pos": "n.",
+        "word": "superiority"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她用手肘把人们推开，从人群中挤了出来。",
+        "example_en": "She pushed through the crowd, elbowing people out of the way.",
+        "id": 4115,
+        "meaning": "用肘挤，挤进",
+        "phonetic": "'elbəʊ",
+        "pos": "v.",
+        "word": "elbow"
+      },
+      {
+        "distractors": [],
+        "example_cn": "原先的房主显然是用壁纸把潮斑都盖起来了。",
+        "example_en": "The previous owners had obviously papered over any damp patches.",
+        "id": 4116,
+        "meaning": "贴壁纸",
+        "phonetic": "'peɪpə",
+        "pos": "v.",
+        "word": "paper"
+      },
+      {
+        "distractors": [],
+        "example_cn": "钢丝钳，铁丝剪",
+        "example_en": "wire cutters",
+        "id": 4117,
+        "meaning": "用于切割的器械",
+        "phonetic": "'kʌtə",
+        "pos": "n.",
+        "word": "cutter"
+      },
+      {
+        "distractors": [],
+        "example_cn": "不到一小时我们就网住了三条鱼。",
+        "example_en": "We netted three fish in under an hour.",
+        "id": 4118,
+        "meaning": "用网捕；用网覆盖",
+        "phonetic": "net",
+        "pos": "v.",
+        "word": "net"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他一个头球，球从球门前横飞而过。",
+        "example_en": "He headed the ball across the face of the goal.",
+        "id": 4119,
+        "meaning": "用头顶（球）；朝...行进",
+        "phonetic": "hed",
+        "pos": "v.",
+        "word": "head"
+      },
+      {
+        "distractors": [],
+        "example_cn": "那女人轻轻拽了拽他的胳膊。",
+        "example_en": "The woman gently tugged his arm.",
+        "id": 4120,
+        "meaning": "用力拖",
+        "phonetic": "tʌg",
+        "pos": "v.",
+        "word": "tug"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们把拖车挂在汽车尾部。",
+        "example_en": "We hooked the trailer to the back of the car.",
+        "id": 4121,
+        "meaning": "（使）钩住，挂住",
+        "phonetic": "hʊk",
+        "pos": "v.",
+        "word": "hook"
+      },
+      {
+        "distractors": [],
+        "example_cn": "1922年，他制定了工党教育政策。",
+        "example_en": "He formulated Labour Party education policy in 1922.",
+        "id": 4122,
+        "meaning": "规划；制定；准备",
+        "phonetic": "'fɔːmjʊleɪt",
+        "pos": "v.",
+        "word": "formulate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他打开牛奶闻了闻。",
+        "example_en": "He opened the milk and sniffed it.",
+        "id": 4123,
+        "meaning": "用鼻子吸，嗅",
+        "phonetic": "snɪf",
+        "pos": "v.",
+        "word": "sniff"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他是错了，而且有勇气承认自己错了。",
+        "example_en": "He was wrong, and courageous enough to admit it.",
+        "id": 4124,
+        "meaning": "勇敢的，无畏的",
+        "phonetic": "kə'reɪdʒəs",
+        "pos": "adj.",
+        "word": "courageous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他移民去了比利时。",
+        "example_en": "He emigrated to Belgium.",
+        "id": 4125,
+        "meaning": "永久移居国外",
+        "phonetic": "'emɪgreɪt",
+        "pos": "v.",
+        "word": "emigrate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "山顶的终年积雪",
+        "example_en": "the perpetual snows of the mountaintops",
+        "id": 4126,
+        "meaning": "永久的；四季开花的",
+        "phonetic": "pə'petʃʊəl; -tjʊəl",
+        "pos": "adj.",
+        "word": "perpetual"
+      },
+      {
+        "distractors": [],
+        "example_cn": "永久的名声",
+        "example_en": "everlasting fame",
+        "id": 4127,
+        "meaning": "永久的；持久的",
+        "phonetic": "evə'lɑːstɪŋ",
+        "pos": "adj.",
+        "word": "everlasting"
+      },
+      {
+        "distractors": [],
+        "example_cn": "基督教承诺的永生",
+        "example_en": "the Christian promise of eternal life",
+        "id": 4128,
+        "meaning": "永久的；不朽的",
+        "phonetic": "ɪ'tɜːn(ə)l; iː-",
+        "pos": "adj.",
+        "word": "eternal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "如果在训练不久之后进食，就可以减缓肌肉僵硬和疼痛。",
+        "example_en": "If you eat soon after your workout, you can minimize muscle stiffness and soreness.",
+        "id": 4129,
+        "meaning": "硬度",
+        "phonetic": "'stɪfnɪs",
+        "pos": "n.",
+        "word": "stiffness"
+      },
+      {
+        "distractors": [],
+        "example_cn": "指挥官说过部队会遵从停火协议。",
+        "example_en": "The commander said that the army would comply with the ceasefire.",
+        "id": 4130,
+        "meaning": "应允，遵照，照做",
+        "phonetic": "kəm'plaɪ",
+        "pos": "v.",
+        "word": "comply"
+      },
+      {
+        "distractors": [],
+        "example_cn": "别骗她，她肯定会发现的。",
+        "example_en": "Don’t lie to her. She’s bound to find out.",
+        "id": 4131,
+        "meaning": "应当的；必定的",
+        "phonetic": "baʊnd",
+        "pos": "adj.",
+        "word": "bound"
+      },
+      {
+        "distractors": [],
+        "example_cn": "那两名士兵向塞西尔中尉行了礼。",
+        "example_en": "The two soldiers saluted Lieutenant Cecil.",
+        "id": 4132,
+        "meaning": "（向…）行军礼，（向…）致敬",
+        "phonetic": "sə'l(j)uːt",
+        "pos": "v.",
+        "word": "salute"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们满足一个特殊客户群的需求。",
+        "example_en": "We cater to an exclusive clientele.",
+        "id": 4133,
+        "meaning": "迎合，投合",
+        "phonetic": "'keɪtə",
+        "pos": "v.",
+        "word": "cater"
+      },
+      {
+        "distractors": [],
+        "example_cn": "牛津大学出版社",
+        "example_en": "Oxford University Press",
+        "id": 4134,
+        "meaning": "出版社；印刷所；印刷机",
+        "phonetic": "pres",
+        "pos": "n.",
+        "word": "press"
+      },
+      {
+        "distractors": [],
+        "example_cn": "印刷工在启动印刷机前检查了页面。",
+        "example_en": "The printer checked the page before starting the press.",
+        "id": 4135,
+        "meaning": "印刷工；印花工",
+        "phonetic": "'prɪntə",
+        "pos": "n.",
+        "word": "printer"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我觉得他对我有点怀恨在心。",
+        "example_en": "I think he’s harbouring some sort of grudge against me.",
+        "id": 4136,
+        "meaning": "怀着（不好的想法、恐惧或希望）；包含，藏有；窝藏",
+        "phonetic": "ˈhɑ:bə(r)",
+        "pos": "v.",
+        "word": "harbour"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的饮食不是很健康。",
+        "example_en": "She doesn’t eat a very healthy diet.",
+        "id": 4137,
+        "meaning": "日常饮食，日常食物",
+        "phonetic": "'daɪət",
+        "pos": "n.",
+        "word": "diet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "如果把贵重物品留在车上，会招来小偷的。",
+        "example_en": "If you leave valuables in your car it will tempt thieves.",
+        "id": 4138,
+        "meaning": "引诱，诱惑，劝诱",
+        "phonetic": "tem(p)t",
+        "pos": "v.",
+        "word": "tempt"
+      },
+      {
+        "distractors": [],
+        "example_cn": "法官在她的判决中引用了1956年最高法院的一项裁决。",
+        "example_en": "The judge cited a 1956 Supreme Court ruling in her decision.",
+        "id": 4139,
+        "meaning": "引证；引用；〔法院〕传召，传讯",
+        "phonetic": "saɪt",
+        "pos": "v.",
+        "word": "cite"
+      }
+    ]
+  },
+  {
+    "unit_id": 159,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "炸弹引起了一场火灾，烧毁了大约六十间房屋。",
+        "example_en": "The bombs ignited a fire which destroyed some 60 houses.",
+        "id": 4140,
+        "meaning": "引燃，着火",
+        "phonetic": "ɪg'naɪt",
+        "pos": "v.",
+        "word": "ignite"
+      },
+      {
+        "distractors": [],
+        "example_cn": "它名字的根源起源鲜为人知。",
+        "example_en": "The derivation of its name is obscure.",
+        "id": 4141,
+        "meaning": "引出；起源；衍生",
+        "phonetic": "derɪ'veɪʃ(ə)n",
+        "pos": "n.",
+        "word": "derivation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…一位投资银行家。",
+        "example_en": "...an investment banker.",
+        "id": 4142,
+        "meaning": "银行家",
+        "phonetic": "'bæŋkə",
+        "pos": "n.",
+        "word": "banker"
+      },
+      {
+        "distractors": [],
+        "example_cn": "名不见经传的诗人",
+        "example_en": "an obscure poet",
+        "id": 4143,
+        "meaning": "无名的；鲜为人知的",
+        "phonetic": "əb'skjʊə",
+        "pos": "adj.",
+        "word": "obscure"
+      },
+      {
+        "distractors": [],
+        "example_cn": "原谅他们吧，因为他们还年轻。",
+        "example_en": "Forgive them inasmuch as they are young.",
+        "id": 4144,
+        "meaning": "因为，由于",
+        "phonetic": "ɪnəz'mʌtʃ",
+        "pos": "adv.",
+        "word": "inasmuch"
+      },
+      {
+        "distractors": [],
+        "example_cn": "去年因为员工生病损失了多少个工作日？",
+        "example_en": "How many working days were lost through sickness last year?",
+        "id": 4145,
+        "meaning": "因为，由于",
+        "phonetic": "θruː",
+        "pos": "prep.",
+        "word": "through"
+      },
+      {
+        "distractors": [],
+        "example_cn": "那些痛苦的回忆最终从她的意识中淡去了。",
+        "example_en": "The painful memories eventually faded from her consciousness.",
+        "id": 4146,
+        "meaning": "意识；知觉",
+        "phonetic": "'kɒnʃəsnɪs",
+        "pos": "n.",
+        "word": "consciousness"
+      },
+      {
+        "distractors": [],
+        "example_cn": "达尔文对某些鸟类习性的论述",
+        "example_en": "Darwin’s observations on the habits of certain birds",
+        "id": 4147,
+        "meaning": "意见，短评，按语",
+        "phonetic": "ɒbzə'veɪʃ(ə)n",
+        "pos": "n.",
+        "word": "observation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他出去喝酒她就不高兴。",
+        "example_en": "She gets cross when he goes out drinking.",
+        "id": 4148,
+        "meaning": "恼怒的",
+        "phonetic": "krɒs",
+        "pos": "adj.",
+        "word": "cross"
+      },
+      {
+        "distractors": [],
+        "example_cn": "哈迪太太忍住了没做任何评论。",
+        "example_en": "Mrs. Hardie refrained from making any comment.",
+        "id": 4149,
+        "meaning": "抑制，制止，忍住",
+        "phonetic": "rɪ'freɪn",
+        "pos": "v.",
+        "word": "refrain"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我只得阻止她跑到街上去。",
+        "example_en": "I had to restrain her from running out into the street.",
+        "id": 4150,
+        "meaning": "制止；抑制",
+        "phonetic": "rɪ'streɪn",
+        "pos": "v.",
+        "word": "restrain"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我真奇怪她为什么会有如此异常的行为。",
+        "example_en": "I wondered why she was behaving in so singular a fashion.",
+        "id": 4151,
+        "meaning": "异常的，奇异的",
+        "phonetic": "'sɪŋgjʊlə",
+        "pos": "adj.",
+        "word": "singular"
+      },
+      {
+        "distractors": [],
+        "example_cn": "总统将向参众两院发表讲话。",
+        "example_en": "The president will address both houses of Congress.",
+        "id": 4152,
+        "meaning": "议院，会议厅",
+        "phonetic": "haʊs",
+        "pos": "n.",
+        "word": "house"
+      },
+      {
+        "distractors": [],
+        "example_cn": "雇主有责任对所有员工一视同仁。",
+        "example_en": "Employers have an obligation to treat all employees equally.",
+        "id": 4153,
+        "meaning": "义务，职责，责任",
+        "phonetic": "ɒblɪ'geɪʃ(ə)n",
+        "pos": "n.",
+        "word": "obligation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "基里巴斯，旧称吉尔伯特群岛",
+        "example_en": "Kiribati, formerly known as the Gilbert Islands",
+        "id": 4154,
+        "meaning": "以前，从前",
+        "phonetic": "'fɔːməlɪ",
+        "pos": "adv.",
+        "word": "formerly"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一条黑色头巾端庄地裹着她的头发。",
+        "example_en": "A black kerchief modestly veiled her hair.",
+        "id": 4155,
+        "meaning": "以面纱遮掩；遮盖",
+        "phonetic": "veɪl",
+        "pos": "v.",
+        "word": "veil"
+      },
+      {
+        "distractors": [],
+        "example_cn": "海伦被丈夫遗弃了。",
+        "example_en": "Helen was deserted by her husband.",
+        "id": 4156,
+        "meaning": "遗弃；擅离（职守）",
+        "phonetic": "(for v.) dɪ'zɜːt; (for n.) 'dezət",
+        "pos": "v.",
+        "word": "desert"
+      },
+      {
+        "distractors": [],
+        "example_cn": "被父母遗弃的孩子",
+        "example_en": "children forsaken by their parents",
+        "id": 4157,
+        "meaning": "遗弃，抛弃；摒绝，摒弃",
+        "phonetic": "fə'seɪk",
+        "pos": "v.",
+        "word": "forsake"
+      },
+      {
+        "distractors": [],
+        "example_cn": "疾病的传播",
+        "example_en": "the transmission of disease",
+        "id": 4158,
+        "meaning": "传播，传染",
+        "phonetic": "trænz'mɪʃ(ə)n; trɑːnz-; -ns-",
+        "pos": "n.",
+        "word": "transmission"
+      },
+      {
+        "distractors": [],
+        "example_cn": "作为一种主要能源，煤的地位已为天然气所取代。",
+        "example_en": "Coal has been displaced by natural gas as a major source of energy.",
+        "id": 4159,
+        "meaning": "移置；取代；置换",
+        "phonetic": "dɪs'pleɪs",
+        "pos": "v.",
+        "word": "displace"
+      },
+      {
+        "distractors": [],
+        "example_cn": "经济作物对传统农业的替代",
+        "example_en": "the displacement of traditional agriculture by industrial crops",
+        "id": 4160,
+        "meaning": "移置；免职；置换",
+        "phonetic": "dɪs'pleɪsm(ə)nt",
+        "pos": "n.",
+        "word": "displacement"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这些殖民地居民艰难地度过了第一个冬天。",
+        "example_en": "The colonists struggled through their first winter.",
+        "id": 4161,
+        "meaning": "移民；殖民地居民",
+        "phonetic": "'kɒlənɪst",
+        "pos": "n.",
+        "word": "colonist"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…一张声乐和器乐光盘。",
+        "example_en": "...a CD of vocal and instrumental music.",
+        "id": 4162,
+        "meaning": "器乐的；有帮助的",
+        "phonetic": "ɪnstrʊ'ment(ə)l",
+        "pos": "adj.",
+        "word": "instrumental"
+      },
+      {
+        "distractors": [],
+        "example_cn": "请你把这些衣服挂到衣橱里去好吗？",
+        "example_en": "Can you hang these in the wardrobe, please?",
+        "id": 4163,
+        "meaning": "衣柜，衣橱，藏衣室",
+        "phonetic": "'wɔːdrəʊb",
+        "pos": "n.",
+        "word": "wardrobe"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她穿上衣服并拉好拉链。",
+        "example_en": "She pulled the garment on and zipped it up.",
+        "id": 4164,
+        "meaning": "衣服；服装，衣着",
+        "phonetic": "'gɑːm(ə)nt",
+        "pos": "n.",
+        "word": "garment"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他在16岁时皈依了伊斯兰教。",
+        "example_en": "He converted to Islam at the age of 16.",
+        "id": 4165,
+        "meaning": "伊斯兰教，回教",
+        "phonetic": "",
+        "pos": "n.",
+        "word": "Islam"
+      },
+      {
+        "distractors": [],
+        "example_cn": "利润将由我们三人平分。",
+        "example_en": "The profits will be split evenly between the three of us.",
+        "id": 4166,
+        "meaning": "一致地；平静地",
+        "phonetic": "'i:vənlɪ",
+        "pos": "adv.",
+        "word": "evenly"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这个新软件与IBM的计算机兼容。",
+        "example_en": "The new software is IBM compatible (= can be used with IBM computers ) .",
+        "id": 4167,
+        "meaning": "兼容的",
+        "phonetic": "kəm'pætɪb(ə)l",
+        "pos": "adj.",
+        "word": "compatible"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她的母亲数了数编织针上的针数。",
+        "example_en": "Her mother counted the stitches on her knitting needles.",
+        "id": 4168,
+        "meaning": "一针，缝线",
+        "phonetic": "stɪtʃ",
+        "pos": "n.",
+        "word": "stitch"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一群猴子",
+        "example_en": "a troop of monkeys",
+        "id": 4169,
+        "meaning": "一群，一队，大量",
+        "phonetic": "truːp",
+        "pos": "n.",
+        "word": "troop"
+      },
+      {
+        "distractors": [],
+        "example_cn": "英国必须和其他欧盟成员国一起贯彻各项政策。",
+        "example_en": "Britain has to pursue policies in concert with other EU members.",
+        "id": 4170,
+        "meaning": "一齐，一致，协作",
+        "phonetic": "'kɒnsət",
+        "pos": "n.",
+        "word": "concert"
+      },
+      {
+        "distractors": [],
+        "example_cn": "烤猪排/羊排",
+        "example_en": "a grilled pork/lamb chop",
+        "id": 4171,
+        "meaning": "一块排骨，肉块",
+        "phonetic": "tʃɒp",
+        "pos": "n.",
+        "word": "chop"
+      },
+      {
+        "distractors": [],
+        "example_cn": "克莱尔是家里最小的孩子。",
+        "example_en": "Clare is the baby of the family.",
+        "id": 4172,
+        "meaning": "一家中年龄最小的人",
+        "phonetic": "'beɪbɪ",
+        "pos": "n.",
+        "word": "baby"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我倒想尽量把那段经历全部忘掉。",
+        "example_en": "I'd like to try and forget the whole episode.",
+        "id": 4173,
+        "meaning": "（人生的）一段经历；（小说的）片段，插曲",
+        "phonetic": "'epɪsəʊd",
+        "pos": "n.",
+        "word": "episode"
+      },
+      {
+        "distractors": [],
+        "example_cn": "群镶钻戒",
+        "example_en": "a diamond cluster ring",
+        "id": 4174,
+        "meaning": "串，束，簇；群，组",
+        "phonetic": "'klʌstə",
+        "pos": "n.",
+        "word": "cluster"
+      },
+      {
+        "distractors": [],
+        "example_cn": "男人什么样，女人什么样，不能一概而论。",
+        "example_en": "You can’t make generalizations about what men and women are like.",
+        "id": 4175,
+        "meaning": "一般化；概括，综合",
+        "phonetic": ",dʒenrələ'zeɪʃən",
+        "pos": "n.",
+        "word": "generalization"
+      },
+      {
+        "distractors": [],
+        "example_cn": "窃贼闯进了他们家。",
+        "example_en": "Burglars broke into their home.",
+        "id": 4176,
+        "meaning": "夜盗，窃贼",
+        "phonetic": "'bɜːglə",
+        "pos": "n.",
+        "word": "burglar"
+      },
+      {
+        "distractors": [],
+        "example_cn": "…专业运动员和业余赛跑运动员。",
+        "example_en": "...professional athletes and amateur runners.",
+        "id": 4177,
+        "meaning": "业余的",
+        "phonetic": "'æmətə; -tʃə; -tjʊə; ,æmə'tɜː",
+        "pos": "adj.",
+        "word": "amateur"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在一家铸造厂工作了10年以后,他成为成人学生学习冶金专业。",
+        "example_en": "He studied metallurgy as a mature student, having spent ten years working in a foundry.",
+        "id": 4178,
+        "meaning": "冶金学，冶金术",
+        "phonetic": "mɪ'tælədʒɪ; 'met(ə),lɜːdʒɪ",
+        "pos": "n.",
+        "word": "metallurgy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "作为一名科学家，他不信耶稣。",
+        "example_en": "As a scientist,he disbelieves in Jesus.",
+        "id": 4179,
+        "meaning": "耶稣",
+        "phonetic": "'dʒiːzəs",
+        "pos": "n.",
+        "word": "Jesus"
+      },
+      {
+        "distractors": [],
+        "example_cn": "堡垒中的守军投降了。",
+        "example_en": "The men in the fort capitulated.",
+        "id": 4180,
+        "meaning": "要塞，堡垒",
+        "phonetic": "fɔːt",
+        "pos": "n.",
+        "word": "fort"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他无法接受的是假定人权标准在不同文化和地区有所不同。",
+        "example_en": "He dismissed arguments postulating differing standards for human rights in different cultures and regions.",
+        "id": 4181,
+        "meaning": "假定，假设",
+        "phonetic": "'pɒstjʊleɪt",
+        "pos": "v.",
+        "word": "postulate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这种新药不需要医生的处方。",
+        "example_en": "The new drug will not require a physician's prescription.",
+        "id": 4182,
+        "meaning": "药方，处方；处方药",
+        "phonetic": "prɪ'skrɪpʃ(ə)n",
+        "pos": "n.",
+        "word": "prescription"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她摇动摇篮，让宝宝安静下来。",
+        "example_en": "She rocked the cradle to quieten the child.",
+        "id": 4183,
+        "meaning": "摇篮；发源地",
+        "phonetic": "'kreɪd(ə)l",
+        "pos": "n.",
+        "word": "cradle"
+      },
+      {
+        "distractors": [],
+        "example_cn": "举棋不定的股东们会见了董事。",
+        "example_en": "Shareholders who were wavering met the directors.",
+        "id": 4184,
+        "meaning": "犹豫不决；摇摆",
+        "phonetic": "'weɪvə",
+        "pos": "v.",
+        "word": "waver"
+      },
+      {
+        "distractors": [],
+        "example_cn": "那条狗咬着叫着，还摇着尾巴。",
+        "example_en": "The dog was biting, growling and wagging its tail.",
+        "id": 4185,
+        "meaning": "（狗） 摇摆 （尾巴）；摇晃 （手指）",
+        "phonetic": "wæg",
+        "pos": "v.",
+        "word": "wag"
+      },
+      {
+        "distractors": [],
+        "example_cn": "氧化铁",
+        "example_en": "iron oxide",
+        "id": 4186,
+        "meaning": "氧化物",
+        "phonetic": "'ɒksaɪd",
+        "pos": "n.",
+        "word": "oxide"
+      },
+      {
+        "distractors": [],
+        "example_cn": "如果有机物腐烂或氧化，它不会形成石油。",
+        "example_en": "If the organic material decays or is oxidized, it will not form petroleum.",
+        "id": 4187,
+        "meaning": "氧化，使生锈",
+        "phonetic": "'ɒksɪdaɪz",
+        "pos": "v.",
+        "word": "oxidize"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一只家猫",
+        "example_en": "a domestic cat",
+        "id": 4188,
+        "meaning": "家养的",
+        "phonetic": "də'mestɪk",
+        "pos": "adj.",
+        "word": "domestic"
+      },
+      {
+        "distractors": [],
+        "example_cn": "主教鼓励一种包容各个阶层的社区精神。",
+        "example_en": "The bishop helped foster the sense of a community embracing all classes.",
+        "id": 4189,
+        "meaning": "培养；抚育，代养",
+        "phonetic": "'fɒstə",
+        "pos": "v.",
+        "word": "foster"
+      }
+    ]
+  },
+  {
+    "unit_id": 160,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "你的公寓有阳台吗？",
+        "example_en": "Has your flat got a balcony?",
+        "id": 4190,
+        "meaning": "阳台；楼厅，楼座",
+        "phonetic": "'bælkənɪ",
+        "pos": "n.",
+        "word": "balcony"
+      },
+      {
+        "distractors": [],
+        "example_cn": "红色电线通常与阳极相联。",
+        "example_en": "A red wire is often attached to the anode.",
+        "id": 4191,
+        "meaning": "阳极，正极，板极",
+        "phonetic": "'ænəʊd",
+        "pos": "n.",
+        "word": "anode"
+      },
+      {
+        "distractors": [],
+        "example_cn": "有一句古老的阿拉伯谚语说：“我敌人的敌人是我的朋友。”",
+        "example_en": "An old Arab proverb says, \"The enemy of my enemy is my friend.\"",
+        "id": 4192,
+        "meaning": "谚语，格言，箴言",
+        "phonetic": "'prɒvɜːb",
+        "pos": "n.",
+        "word": "proverb"
+      },
+      {
+        "distractors": [],
+        "example_cn": "国宴",
+        "example_en": "a state banquet (=  one attended by heads of government and other important people  )",
+        "id": 4193,
+        "meaning": "宴会，盛会，酒席",
+        "phonetic": "'bæŋkwɪt",
+        "pos": "n.",
+        "word": "banquet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "限制罪犯活动范围的措施",
+        "example_en": "measures to limit the scope of criminals’ activities",
+        "id": 4194,
+        "meaning": "（学科、活动、书籍等的）范围；（发挥能力的）机会，施展余地；眼界",
+        "phonetic": "skəʊp",
+        "pos": "n.",
+        "word": "scope"
+      },
+      {
+        "distractors": [],
+        "example_cn": "会谈是秘密进行的。",
+        "example_en": "The talks have been cloaked in secrecy.",
+        "id": 4195,
+        "meaning": "掩盖，掩饰；覆盖，笼罩",
+        "phonetic": "kləʊk",
+        "pos": "v.",
+        "word": "cloak"
+      },
+      {
+        "distractors": [],
+        "example_cn": "报道猛烈地抨击了警方。",
+        "example_en": "The report was sharply critical of the police.",
+        "id": 4196,
+        "meaning": "严厉地，苛刻地",
+        "phonetic": "'ʃɑ:plɪ",
+        "pos": "adv.",
+        "word": "sharply"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我在想方设法拖长这次谈话。",
+        "example_en": "I was trying to think of some way to prolong the conversation.",
+        "id": 4197,
+        "meaning": "延长，拉长，拖延",
+        "phonetic": "prə'lɒŋ",
+        "pos": "v.",
+        "word": "prolong"
+      },
+      {
+        "distractors": [],
+        "example_cn": "寒冷的天气使许多植物生长滞缓。",
+        "example_en": "Cold weather retards the growth of many plants.",
+        "id": 4198,
+        "meaning": "阻碍；减缓；放慢",
+        "phonetic": "'rɪtɑːd",
+        "pos": "v.",
+        "word": "retard"
+      },
+      {
+        "distractors": [],
+        "example_cn": "干酪腌菜三明治",
+        "example_en": "cheese and pickle sandwiches",
+        "id": 4199,
+        "meaning": "腌制食品，泡菜",
+        "phonetic": "'pɪk(ə)l",
+        "pos": "n.",
+        "word": "pickle"
+      },
+      {
+        "distractors": [],
+        "example_cn": "每年看两次牙医做检查。",
+        "example_en": "Visit your dentist twice a year for a checkup.",
+        "id": 4200,
+        "meaning": "牙科医生",
+        "phonetic": "'dentɪst",
+        "pos": "n.",
+        "word": "dentist"
+      },
+      {
+        "distractors": [],
+        "example_cn": "吸鸦片成瘾者",
+        "example_en": "an opium addict",
+        "id": 4201,
+        "meaning": "鸦片；麻醉剂",
+        "phonetic": "'əʊpɪəm",
+        "pos": "n.",
+        "word": "opium"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们要求预付一个月的租金，再加500美元的押金。",
+        "example_en": "We ask for one month’s rent in advance, plus a deposit of 500.",
+        "id": 4202,
+        "meaning": "押金",
+        "phonetic": "dɪ'pɒzɪt",
+        "pos": "n.",
+        "word": "deposit"
+      },
+      {
+        "distractors": [],
+        "example_cn": "把橙子榨一榨。",
+        "example_en": "Squeeze the oranges.",
+        "id": 4203,
+        "meaning": "压榨；榨取",
+        "phonetic": "skwiːz",
+        "pos": "v.",
+        "word": "squeeze"
+      },
+      {
+        "distractors": [],
+        "example_cn": "空气的压缩",
+        "example_en": "the compression of air",
+        "id": 4204,
+        "meaning": "压缩，压紧，浓缩",
+        "phonetic": "kəm'preʃ(ə)n",
+        "pos": "n.",
+        "word": "compression"
+      },
+      {
+        "distractors": [],
+        "example_cn": "蛋糕在送来这里的路上有点压坏了。",
+        "example_en": "The cake got a bit squashed on the way here.",
+        "id": 4205,
+        "meaning": "压碎",
+        "phonetic": "skwɒʃ",
+        "pos": "v.",
+        "word": "squash"
+      },
+      {
+        "distractors": [],
+        "example_cn": "起初你可能觉得它有些无法抗拒。",
+        "example_en": "You may find it somewhat overwhelming at first.",
+        "id": 4206,
+        "meaning": "压倒的，势不可挡的",
+        "phonetic": ",ovɚ'wɛlmɪŋ",
+        "pos": "adj.",
+        "word": "overwhelming"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我悲痛不已。",
+        "example_en": "Grief overwhelmed me.",
+        "id": 4207,
+        "meaning": "使（某人）感到不能自持，使不知所措；压倒，击败",
+        "phonetic": "əʊvə'welm",
+        "pos": "v.",
+        "word": "overwhelm"
+      },
+      {
+        "distractors": [],
+        "example_cn": "马丁内斯的快球速度极快。",
+        "example_en": "Martinez had good velocity on his fastball.",
+        "id": 4208,
+        "meaning": "迅速，快速",
+        "phonetic": "vəˈlɒsəti",
+        "pos": "n.",
+        "word": "velocity"
+      },
+      {
+        "distractors": [],
+        "example_cn": "运动能促进血液循环。",
+        "example_en": "Exercise improves the circulation.",
+        "id": 4209,
+        "meaning": "血液循环；（资料、货币等）流通",
+        "phonetic": "sɜːkjʊ'leɪʃ(ə)n",
+        "pos": "n.",
+        "word": "circulation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "安全部队加强了对该地区的巡逻。",
+        "example_en": "The security forces increased their patrols in the area.",
+        "id": 4210,
+        "meaning": "巡逻，巡查",
+        "phonetic": "pə'trəʊl",
+        "pos": "n.",
+        "word": "patrol"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她想坐驳船游览法国的运河。",
+        "example_en": "She wants to cruise the canals of France in a barge.",
+        "id": 4211,
+        "meaning": "巡航，巡航于…",
+        "phonetic": "kruːz",
+        "pos": "v.",
+        "word": "cruise"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他从早年开始就一直在寻求宗教信仰。",
+        "example_en": "He had been questing for religious belief from an early age.",
+        "id": 4212,
+        "meaning": "寻找，追求",
+        "phonetic": "kwest",
+        "pos": "v.",
+        "word": "quest"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他在抽一只大雪茄。",
+        "example_en": "He was smoking a big cigar.",
+        "id": 4213,
+        "meaning": "雪茄烟，叶卷烟",
+        "phonetic": "sɪ'gɑː",
+        "pos": "n.",
+        "word": "cigar"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她获得了艾奥瓦州立大学的奖学金。",
+        "example_en": "She won a scholarship to Iowa State University.",
+        "id": 4214,
+        "meaning": "奖学金；学问，学识",
+        "phonetic": "'skɒləʃɪp",
+        "pos": "n.",
+        "word": "scholarship"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她身穿白色真丝礼服，看上去光彩照人。",
+        "example_en": "She looked radiant in a white silk dress.",
+        "id": 4215,
+        "meaning": "容光焕发的；灿烂的",
+        "phonetic": "'reɪdɪənt",
+        "pos": "adj.",
+        "word": "radiant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "“你觉得我的新室友怎么样？”“他帅极了！”",
+        "example_en": "‘What do you think of my new flatmate?’ ‘He’s absolutely gorgeous !’",
+        "id": 4216,
+        "meaning": "极其漂亮的，极其吸引人的；绚丽的，华丽的",
+        "phonetic": "'gɔːdʒəs",
+        "pos": "adj.",
+        "word": "gorgeous"
+      },
+      {
+        "distractors": [],
+        "example_cn": "有多种选择。",
+        "example_en": "There are a number of options available.",
+        "id": 4217,
+        "meaning": "选择，取舍",
+        "phonetic": "'ɒpʃ(ə)n",
+        "pos": "n.",
+        "word": "option"
+      },
+      {
+        "distractors": [],
+        "example_cn": "远处有只公鸡在打鸣。",
+        "example_en": "A cock crowed in the distance.",
+        "id": 4218,
+        "meaning": "公鸡",
+        "phonetic": "kɒk",
+        "pos": "n.",
+        "word": "cock"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他们演奏了一些动听的曲子。",
+        "example_en": "They played some lovely melodies.",
+        "id": 4219,
+        "meaning": "旋律，曲调；歌曲",
+        "phonetic": "'melədɪ",
+        "pos": "n.",
+        "word": "melody"
+      },
+      {
+        "distractors": [],
+        "example_cn": "部分岩壁悬在了小径一处的上方。",
+        "example_en": "Part of the rock wall overhung the path at one point.",
+        "id": 4220,
+        "meaning": "悬于…之上，悬垂",
+        "phonetic": "əʊvə'hæŋ",
+        "pos": "v.",
+        "word": "overhang"
+      },
+      {
+        "distractors": [],
+        "example_cn": "几名护士坐在灯光闪烁、监听器嘟嘟作响的控制台前。",
+        "example_en": "Several nurses sat before a console of flickering lights and bleeping monitors.",
+        "id": 4221,
+        "meaning": "悬臂，肘托；控制台",
+        "phonetic": "kən'səʊl",
+        "pos": "n.",
+        "word": "console"
+      },
+      {
+        "distractors": [],
+        "example_cn": "政治宣传的开展",
+        "example_en": "the spreading of political propaganda",
+        "id": 4222,
+        "meaning": "宣传",
+        "phonetic": "prɒpə'gændə",
+        "pos": "n.",
+        "word": "propaganda"
+      },
+      {
+        "distractors": [],
+        "example_cn": "发布 / 签署公告",
+        "example_en": "to issue/sign a declaration",
+        "id": 4223,
+        "meaning": "宣布，宣言",
+        "phonetic": "deklə'reɪʃ(ə)n",
+        "pos": "n.",
+        "word": "declaration"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她对这段旅程的叙述一直吸引着我们。",
+        "example_en": "Her narration of the journey kept us interested.",
+        "id": 4224,
+        "meaning": "叙述；故事；叙述法",
+        "phonetic": "nə'reɪʃ(ə)n",
+        "pos": "n.",
+        "word": "narration"
+      },
+      {
+        "distractors": [],
+        "example_cn": "注意要按正确的顺序来完成动作。",
+        "example_en": "Be careful to perform the actions in the correct sequence.",
+        "id": 4225,
+        "meaning": "序列，顺序",
+        "phonetic": "'siːkw(ə)ns",
+        "pos": "n.",
+        "word": "sequence"
+      },
+      {
+        "distractors": [],
+        "example_cn": "地方法官发出了对他的逮捕令。",
+        "example_en": "The magistrate issued a warrant for his arrest.",
+        "id": 4226,
+        "meaning": "（法院授权警方采取行动的）令状；许可证",
+        "phonetic": "'wɒr(ə)nt",
+        "pos": "n.",
+        "word": "warrant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他缺少必要的资历。",
+        "example_en": "He lacks the requisite qualifications.",
+        "id": 4227,
+        "meaning": "需要的，必要的",
+        "phonetic": "'rekwɪzɪt",
+        "pos": "adj.",
+        "word": "requisite"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这条短裤口袋上有蓝色的刺绣。",
+        "example_en": "The shorts had blue embroidery over the pockets.",
+        "id": 4228,
+        "meaning": "绣花，刺绣；绣制品",
+        "phonetic": "ɪm'brɒɪd(ə)rɪ; em-",
+        "pos": "n.",
+        "word": "embroidery"
+      },
+      {
+        "distractors": [],
+        "example_cn": "托马斯先生受教于天主教修女。在修女开办的学校里他专心工作，刻苦学习。",
+        "example_en": "Mr. Thomas was taught by the Catholic nuns whose school he attended to work and study hard.",
+        "id": 4229,
+        "meaning": "修女，尼姑",
+        "phonetic": "nʌn",
+        "pos": "n.",
+        "word": "nun"
+      },
+      {
+        "distractors": [],
+        "example_cn": "激情洋溢的演讲",
+        "example_en": "a speech of passionate eloquence",
+        "id": 4230,
+        "meaning": "雄辩；口才，修辞",
+        "phonetic": "'eləkwəns",
+        "pos": "n.",
+        "word": "eloquence"
+      },
+      {
+        "distractors": [],
+        "example_cn": "风从东北方向吹来。",
+        "example_en": "The wind blew from the northeast.",
+        "id": 4231,
+        "meaning": "风",
+        "phonetic": "wɪnd; (for v.) waɪnd",
+        "pos": "n.",
+        "word": "wind"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我在电话簿上找不到你的电话号码。",
+        "example_en": "I couldn’t find your number in the telephone directory.",
+        "id": 4232,
+        "meaning": "姓名地址录",
+        "phonetic": "dɪ'rekt(ə)rɪ; daɪ-",
+        "pos": "n.",
+        "word": "directory"
+      },
+      {
+        "distractors": [],
+        "example_cn": "戈尔巴乔夫不像人们想得那样温和。",
+        "example_en": "Gorbachev was less pacific than people thought.",
+        "id": 4233,
+        "meaning": "性情温和的",
+        "phonetic": "pə'sɪfɪk",
+        "pos": "adj.",
+        "word": "pacific"
+      },
+      {
+        "distractors": [],
+        "example_cn": "医生说他有十分之一的生存希望。",
+        "example_en": "The doctors gave him a one in ten chance of survival .",
+        "id": 4234,
+        "meaning": "幸存；残存；幸存者",
+        "phonetic": "sə'vaɪv(ə)l",
+        "pos": "n.",
+        "word": "survival"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他那番话讲得她脸红发烫。",
+        "example_en": "His words brought a warm flush to her face.",
+        "id": 4235,
+        "meaning": "脸红；一阵强烈情感；（流露出的）一阵激情",
+        "phonetic": "flʌʃ",
+        "pos": "n.",
+        "word": "flush"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他使这封信保持正式公文的语气。",
+        "example_en": "He kept the tone of the letter formal and businesslike.",
+        "id": 4236,
+        "meaning": "正规的；庄重的",
+        "phonetic": "'fɔːm(ə)l",
+        "pos": "adj.",
+        "word": "formal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "欧盟及其成员国",
+        "example_en": "the EU and its constituent members",
+        "id": 4237,
+        "meaning": "构成的",
+        "phonetic": "kən'stɪtjʊənt",
+        "pos": "adj.",
+        "word": "constituent"
+      },
+      {
+        "distractors": [],
+        "example_cn": "鲜红的浆果",
+        "example_en": "scarlet berries",
+        "id": 4238,
+        "meaning": "猩红色",
+        "phonetic": "'skɑːlət",
+        "pos": "n.",
+        "word": "scarlet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "宗教信仰不同的人",
+        "example_en": "people of different religions",
+        "id": 4239,
+        "meaning": "宗教",
+        "phonetic": "rɪ'lɪdʒ(ə)n",
+        "pos": "n.",
+        "word": "religion"
+      }
+    ]
+  },
+  {
+    "unit_id": 161,
+    "words": [
+      {
+        "distractors": [],
+        "example_cn": "许多玩具除了有些新奇感之外，别无吸引力。",
+        "example_en": "Many toys have no attraction beyond their novelty value.",
+        "id": 4240,
+        "meaning": "新颖；新奇的事物",
+        "phonetic": "'nɒv(ə)ltɪ",
+        "pos": "n.",
+        "word": "novelty"
+      },
+      {
+        "distractors": [],
+        "example_cn": "...大自然的再生力。",
+        "example_en": "...the regenerative power of nature.",
+        "id": 4241,
+        "meaning": "回授的；再生的",
+        "phonetic": "rɪ'dʒen(ə)rətɪv",
+        "pos": "adj.",
+        "word": "regenerative"
+      },
+      {
+        "distractors": [],
+        "example_cn": "新郎请客人起立为女傧相干杯.",
+        "example_en": "The bridegroom asked the guests to stand and then toasted the bridesmaids.",
+        "id": 4242,
+        "meaning": "新郎",
+        "phonetic": "'braɪdgruːm",
+        "pos": "n.",
+        "word": "bridegroom"
+      },
+      {
+        "distractors": [],
+        "example_cn": "多么新奇的想法呀！",
+        "example_en": "What a novel idea!",
+        "id": 4243,
+        "meaning": "新的，异常的",
+        "phonetic": "'nɒv(ə)l",
+        "pos": "adj.",
+        "word": "novel"
+      },
+      {
+        "distractors": [],
+        "example_cn": "黄铜是铜锌合金。",
+        "example_en": "Brass is an alloy of copper and zinc.",
+        "id": 4244,
+        "meaning": "锌",
+        "phonetic": "zɪŋk",
+        "pos": "n.",
+        "word": "zinc"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这有助于培养小孩子对诗歌和文学作品的欣赏力。",
+        "example_en": "It helps children to develop an appreciation of poetry and literature.",
+        "id": 4245,
+        "meaning": "欣赏；感激",
+        "phonetic": "əpriːʃɪ'eɪʃ(ə)n; -sɪ-",
+        "pos": "n.",
+        "word": "appreciation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "发展心理学领域的专家",
+        "example_en": "experts in the field of developmental psychology",
+        "id": 4246,
+        "meaning": "心理学；心理",
+        "phonetic": "",
+        "pos": "n.",
+        "word": "psychology"
+      },
+      {
+        "distractors": [],
+        "example_cn": "蟹肉",
+        "example_en": "crab meat",
+        "id": 4247,
+        "meaning": "蟹；蟹肉",
+        "phonetic": "kræb",
+        "pos": "n.",
+        "word": "crab"
+      },
+      {
+        "distractors": [],
+        "example_cn": "下标操作符必须定义为类成员函数。",
+        "example_en": "The subscript operator must be defined as a class member function.",
+        "id": 4248,
+        "meaning": "写在下方的",
+        "phonetic": "'sʌbskrɪpt",
+        "pos": "adj.",
+        "word": "subscript"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一阵狂风把汽车横着掀进了沟里。",
+        "example_en": "A strong gust of wind blew the car sideways into the ditch.",
+        "id": 4249,
+        "meaning": "斜向一边地",
+        "phonetic": "'saɪdweɪz",
+        "pos": "adv.",
+        "word": "sideways"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一个穿着牛仔裤和破旧T恤衫的年轻人",
+        "example_en": "a young man in jeans and a worn T-shirt",
+        "id": 4250,
+        "meaning": "斜纹布；牛仔裤",
+        "phonetic": "dʒiːn",
+        "pos": "n.",
+        "word": "jean"
+      },
+      {
+        "distractors": [],
+        "example_cn": "陡坡",
+        "example_en": "a steep gradient",
+        "id": 4251,
+        "meaning": "斜坡",
+        "phonetic": "'greɪdɪənt",
+        "pos": "n.",
+        "word": "gradient"
+      },
+      {
+        "distractors": [],
+        "example_cn": "萨拉有时相当狠毒。",
+        "example_en": "Sarah can be quite vicious at times.",
+        "id": 4252,
+        "meaning": "邪恶的；恶性的",
+        "phonetic": "'vɪʃəs",
+        "pos": "adj.",
+        "word": "vicious"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她想保护她的孩子不受外界的不良影响。",
+        "example_en": "She wanted to protect her children from the evils of the outside world.",
+        "id": 4253,
+        "meaning": "邪恶，罪恶；祸害",
+        "phonetic": "'iːv(ə)l; -vɪl",
+        "pos": "n.",
+        "word": "evil"
+      },
+      {
+        "distractors": [],
+        "example_cn": "两国在几个人造衞星项目上展开合作。",
+        "example_en": "The two nations are collaborating on several satellite projects.",
+        "id": 4254,
+        "meaning": "协作，合作；协调",
+        "phonetic": "kə'læbəreɪt",
+        "pos": "v.",
+        "word": "collaborate"
+      },
+      {
+        "distractors": [],
+        "example_cn": "配亮色衬衫的黑裤子",
+        "example_en": "black trousers teamed with a bright shirt",
+        "id": 4255,
+        "meaning": "协作，合作",
+        "phonetic": "tiːm",
+        "pos": "v.",
+        "word": "team"
+      },
+      {
+        "distractors": [],
+        "example_cn": "在8pq中pq的系数为8。",
+        "example_en": "In 8pq, the coefficient of pq is 8.",
+        "id": 4256,
+        "meaning": "协同因素；系数，率",
+        "phonetic": ",kəʊɪ'fɪʃ(ə)nt",
+        "pos": "n.",
+        "word": "coefficient"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他用锤子把楔子砸入石缝里。",
+        "example_en": "He hammered the wedge into the crack in the stone.",
+        "id": 4257,
+        "meaning": "楔",
+        "phonetic": "wedʒ",
+        "pos": "n.",
+        "word": "wedge"
+      },
+      {
+        "distractors": [],
+        "example_cn": "校准误差",
+        "example_en": "a calibration error",
+        "id": 4258,
+        "meaning": "校准；标定，刻度",
+        "phonetic": "kælɪ'breɪʃ(ə)n",
+        "pos": "n.",
+        "word": "calibration"
+      },
+      {
+        "distractors": [],
+        "example_cn": "小说开篇的几个段落",
+        "example_en": "the opening paragraphs of the novel",
+        "id": 4259,
+        "meaning": "（文章的）段，段落",
+        "phonetic": "'pærəgrɑːf",
+        "pos": "n.",
+        "word": "paragraph"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一位谨慎的司机",
+        "example_en": "a cautious driver",
+        "id": 4260,
+        "meaning": "小心的，谨慎的",
+        "phonetic": "'kɔːʃəs",
+        "pos": "adj.",
+        "word": "cautious"
+      },
+      {
+        "distractors": [],
+        "example_cn": "医师在开抗抑郁药处方时必须谨慎。",
+        "example_en": "The physician must exercise caution when prescribing antidepressants.",
+        "id": 4261,
+        "meaning": "小心",
+        "phonetic": "'kɔːʃ(ə)n",
+        "pos": "n.",
+        "word": "caution"
+      },
+      {
+        "distractors": [],
+        "example_cn": "安德鲁没有用多长时间就整理好了手提箱。",
+        "example_en": "It did not take Andrew long to pack a suitcase.",
+        "id": 4262,
+        "meaning": "手提箱，衣箱",
+        "phonetic": "'suːtkeɪs",
+        "pos": "n.",
+        "word": "suitcase"
+      },
+      {
+        "distractors": [],
+        "example_cn": "改为十进制",
+        "example_en": "changing to a decimal system",
+        "id": 4263,
+        "meaning": "小数的，十进制的",
+        "phonetic": "'desɪm(ə)l",
+        "pos": "adj.",
+        "word": "decimal"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他说他只是把这个倒在人行道上的醉汉扶了起来，他根本不认识他。",
+        "example_en": "He said he had just picked up the druken man from the footpath and did not know him from Adam.",
+        "id": 4264,
+        "meaning": "小路，人行道",
+        "phonetic": "'fʊtpɑːθ",
+        "pos": "n.",
+        "word": "footpath"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一只六个月大的小狗",
+        "example_en": "a six-month-old puppy",
+        "id": 4265,
+        "meaning": "小狗；幼小的动物",
+        "phonetic": "'pʌpɪ",
+        "pos": "n.",
+        "word": "puppy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "满是漂亮衣服的壁橱",
+        "example_en": "a closet full of beautiful clothes",
+        "id": 4266,
+        "meaning": "小房间；壁碗橱",
+        "phonetic": "'klɒzɪt",
+        "pos": "n.",
+        "word": "closet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "政治宣传册",
+        "example_en": "a political pamphlet",
+        "id": 4267,
+        "meaning": "小册子",
+        "phonetic": "ˈpæmflɪt",
+        "pos": "n.",
+        "word": "pamphlet"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一整天生意都很冷清。",
+        "example_en": "Business remained slack throughout the day.",
+        "id": 4268,
+        "meaning": "萧条的；懈怠的",
+        "phonetic": "slæk",
+        "pos": "adj.",
+        "word": "slack"
+      },
+      {
+        "distractors": [],
+        "example_cn": "警方正在调查这名女子的失踪。",
+        "example_en": "Police are investigating the woman’s disappearance.",
+        "id": 4269,
+        "meaning": "消失，消散；失踪",
+        "phonetic": "dɪsə'pɪərəns",
+        "pos": "n.",
+        "word": "disappearance"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他唯一的消遣就是喝啤酒和看足球比赛。",
+        "example_en": "His only recreations are drinking beer and watching football.",
+        "id": 4270,
+        "meaning": "消遣，娱乐活动",
+        "phonetic": ",rekrɪ'eɪʃ(ə)n",
+        "pos": "n.",
+        "word": "recreation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "不久消费者就要支付更高的机票价了。",
+        "example_en": "Consumers will soon be paying higher airfares.",
+        "id": 4271,
+        "meaning": "消费者，用户",
+        "phonetic": "kən'sjuːmə",
+        "pos": "n.",
+        "word": "consumer"
+      },
+      {
+        "distractors": [],
+        "example_cn": "剧烈运动增加氧的消耗。",
+        "example_en": "Vigorous exercise increases oxygen consumption.",
+        "id": 4272,
+        "meaning": "消费（量）",
+        "phonetic": "kən'sʌm(p)ʃ(ə)n",
+        "pos": "n.",
+        "word": "consumption"
+      },
+      {
+        "distractors": [],
+        "example_cn": "露西的情绪极度消沉。",
+        "example_en": "Lucy’s mood was one of deep depression.",
+        "id": 4273,
+        "meaning": "消沉；不景气萧条期",
+        "phonetic": "dɪ'preʃ(ə)n",
+        "pos": "n.",
+        "word": "depression"
+      },
+      {
+        "distractors": [],
+        "example_cn": "自动贩卖机使用的代用币",
+        "example_en": "slot-machine tokens",
+        "id": 4274,
+        "meaning": "辅币；象征",
+        "phonetic": "'təʊk(ə)n",
+        "pos": "n.",
+        "word": "token"
+      },
+      {
+        "distractors": [],
+        "example_cn": "一副象牙国际象棋",
+        "example_en": "an ivory chess set",
+        "id": 4275,
+        "meaning": "象牙（质）；乳白色",
+        "phonetic": "'aɪv(ə)rɪ",
+        "pos": "n.",
+        "word": "ivory"
+      },
+      {
+        "distractors": [],
+        "example_cn": "他身体前倾，胳膊肘撑在桌子上。",
+        "example_en": "He leaned forward , his elbows resting on the table.",
+        "id": 4276,
+        "meaning": "向前；向将来",
+        "phonetic": "'fɔːwəd",
+        "pos": "adv.",
+        "word": "forward"
+      },
+      {
+        "distractors": [],
+        "example_cn": "我们沿海岸向南走。",
+        "example_en": "We followed the coast southwards.",
+        "id": 4277,
+        "meaning": "向南方",
+        "phonetic": "'saʊθwədz",
+        "pos": "adv.",
+        "word": "southwards"
+      },
+      {
+        "distractors": [],
+        "example_cn": "公司需要针对其产品的营销设定一个更为明确的目标。",
+        "example_en": "The company needs to develop a stronger orientation towards marketing its products.",
+        "id": 4278,
+        "meaning": "定位；方向",
+        "phonetic": ",ɔːrɪən'teɪʃ(ə)n; ,ɒr-",
+        "pos": "n.",
+        "word": "orientation"
+      },
+      {
+        "distractors": [],
+        "example_cn": "公然抗拒法律的人",
+        "example_en": "people who openly defy the law",
+        "id": 4279,
+        "meaning": "向…挑战；蔑视",
+        "phonetic": "dɪ'faɪ",
+        "pos": "v.",
+        "word": "defy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "她探出窗户向一个路人大喊。",
+        "example_en": "She leaned out of the window and hailed a passerby.",
+        "id": 4280,
+        "meaning": "向…欢呼，招呼",
+        "phonetic": "heɪl",
+        "pos": "v.",
+        "word": "hail"
+      },
+      {
+        "distractors": [],
+        "example_cn": "汉娜渴望有个孩子。",
+        "example_en": "Hannah yearned for a child.",
+        "id": 4281,
+        "meaning": "渴望，向往",
+        "phonetic": "jɜːn",
+        "pos": "v.",
+        "word": "yearn"
+      },
+      {
+        "distractors": [],
+        "example_cn": "香草和香料",
+        "example_en": "herbs and spices",
+        "id": 4282,
+        "meaning": "香料，调味品",
+        "phonetic": "spaɪs",
+        "pos": "n.",
+        "word": "spice"
+      },
+      {
+        "distractors": [],
+        "example_cn": "祭拜圣庙的朝圣者",
+        "example_en": "pilgrims visiting a holy shrine",
+        "id": 4283,
+        "meaning": "香客，朝圣者",
+        "phonetic": "'pɪlgrɪm",
+        "pos": "n.",
+        "word": "pilgrim"
+      },
+      {
+        "distractors": [],
+        "example_cn": "芳香的花朵",
+        "example_en": "fragrant flowers",
+        "id": 4284,
+        "meaning": "香的，芬芳的",
+        "phonetic": "'freɪgr(ə)nt",
+        "pos": "adj.",
+        "word": "fragrant"
+      },
+      {
+        "distractors": [],
+        "example_cn": "充满焚香气味的教堂",
+        "example_en": "a church filled with the smell of incense",
+        "id": 4285,
+        "meaning": "香，熏香；香气",
+        "phonetic": "'ɪnsens",
+        "pos": "n.",
+        "word": "incense"
+      },
+      {
+        "distractors": [],
+        "example_cn": "这些原则统一适用于所有部门。",
+        "example_en": "The principles were applied uniformly across all the departments.",
+        "id": 4286,
+        "meaning": "相同地；一贯",
+        "phonetic": "'ju:nɪfɔ:mlɪ",
+        "pos": "adv.",
+        "word": "uniformly"
+      },
+      {
+        "distractors": [],
+        "example_cn": "苏珊和她的姐姐十分相像。",
+        "example_en": "The resemblance between Susan and her sister was remarkable.",
+        "id": 4287,
+        "meaning": "相似，相似性",
+        "phonetic": "rɪ'zembl(ə)ns",
+        "pos": "n.",
+        "word": "resemblance"
+      },
+      {
+        "distractors": [],
+        "example_cn": "人类行为与动物行为的类同",
+        "example_en": "analogies between human and animal behaviour",
+        "id": 4288,
+        "meaning": "相似，类似；比拟",
+        "phonetic": "ə'nælədʒɪ",
+        "pos": "n.",
+        "word": "analogy"
+      },
+      {
+        "distractors": [],
+        "example_cn": "免疫系统与神经系统及激素相互影响。",
+        "example_en": "The immune system interacts with both the nervous system and the hormones.",
+        "id": 4289,
+        "meaning": "相互作用",
+        "phonetic": "ɪntər'ækt",
+        "pos": "v.",
+        "word": "interact"
+      }
+    ]
+  }
+]
