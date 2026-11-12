@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const content = require('./db');
+const {mergeAnonymousProfiles,profileFromHeader} = require('./profiles');
 
 const ROOT = __dirname;
 const PUBLIC = path.join(ROOT, 'public');
@@ -14,15 +15,28 @@ function readState() {
   try { return JSON.parse(fs.readFileSync(stateFile, 'utf8')); }
   catch { return { users: [], progress: {}, actions: {}, books: [] }; }
 }
-function writeState(state) { fs.mkdirSync(DATA, { recursive: true }); fs.writeFileSync(stateFile, JSON.stringify(state, null, 2), 'utf8'); }
+function writeState(state) {
+  fs.mkdirSync(path.dirname(stateFile), {recursive:true});
+  const temporary=stateFile+'.'+process.pid+'.tmp';
+  fs.writeFileSync(temporary,JSON.stringify(state,null,2),'utf8');
+  fs.renameSync(temporary,stateFile);
+}
 let state = readState();
+const migration=mergeAnonymousProfiles(state);
+if(migration.mergedProfiles){
+  const backupDir=path.join(path.dirname(stateFile),'backups');
+  fs.mkdirSync(backupDir,{recursive:true});
+  const backup=path.join(backupDir,'state-before-shared-profile-'+Date.now()+'-'+process.pid+'.json');
+  fs.copyFileSync(stateFile,backup,fs.constants.COPYFILE_EXCL);
+  writeState(migration.state);state=migration.state;
+}
 function json(res, status, body) {
   const out = JSON.stringify(body);
   res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'Access-Control-Allow-Origin': '*' });
   res.end(out);
 }
 function parseBody(req) { return new Promise((resolve, reject) => { let text = '', bytes=0; req.on('data', c => { bytes+=c.length; if(bytes>40*1024*1024) { reject(Object.assign(new Error('导入文件不能超过40MB'),{status:413})); return; } text+=c; }); req.on('error',reject); req.on('end', () => { try { resolve(text ? JSON.parse(text) : {}); } catch (e) { reject(Object.assign(new Error('JSON格式不正确'),{status:400})); } }); }); }
-function idFrom(req) { return req.headers['x-local-user'] || 'local-user'; }
+function idFrom(req) { return profileFromHeader(req.headers['x-local-user'],state.users); }
 function publicCourses(user) {
   return content.getCourses().map(c => {
     const units=c.units.map(u=>{ const p=state.progress[progressKey(user,c.id,u.id)]; const valid=new Set(p?.studied_ids?.length ? content.getWords(c.id,u.id).map(w=>w.id) : []); const learned=(p?.studied_ids || []).filter(id=>valid.has(id)).length; return {...u,learned,percent:Math.min(100,Math.round(learned*100/(u.total_words || 1)))}; });
@@ -86,4 +100,7 @@ function route(req, res) {
   return sendFile(res, file);
 }
 
-http.createServer((req, res) => { if(req.method!=='GET' && req.method!=='OPTIONS' && req.headers.origin && req.headers.origin!==`http://${req.headers.host}`) return json(res,403,{message:'请从本地软件页面操作'}); Promise.resolve().then(()=>route(req, res)).catch(err => { console.error(err); if(!res.headersSent) json(res, err.status || 500, { message: err.status ? err.message : '本地服务发生错误' }); }); }).listen(PORT, '127.0.0.1', () => console.log(`枫叶单词运行于 http://127.0.0.1:${PORT}`));
+http.createServer((req, res) => { if(req.method!=='GET' && req.method!=='OPTIONS' && req.headers.origin && req.headers.origin!==`http://${req.headers.host}`) return json(res,403,{message:'请从本地软件页面操作'}); Promise.resolve().then(()=>route(req, res)).catch(err => { console.error(err); if(!res.headersSent) json(res, err.status || 500, { message: err.status ? err.message : '本地服务发生错误' }); }); }).listen(PORT, '127.0.0.1', () => {
+  console.log(`枫叶单词运行于 http://127.0.0.1:${PORT}`);
+  if(migration.mergedProfiles) console.log('已合并 '+migration.mergedProfiles+' 份匿名浏览器记录，原记录已备份。');
+});

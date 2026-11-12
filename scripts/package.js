@@ -13,7 +13,7 @@ async function main() {
   // Never overwrite a delivered copy that may contain learning data.
   if (fs.existsSync(dest)) throw new Error('发布目录已存在，请使用新版本号或先将已有发布目录另存：' + dest);
   fs.mkdirSync(dest, {recursive:true});
-  for (const file of ['server.js', 'db.js', 'package.json', 'package-lock.json', 'README.md', 'RELEASE_NOTES.md', 'THIRD_PARTY_NOTICES.md', '使用说明.txt', '启动枫叶单词.cmd']) fs.copyFileSync(path.join(root, file), path.join(dest, file));
+  for (const file of ['server.js', 'db.js', 'profiles.js', 'package.json', 'package-lock.json', 'README.md', 'RELEASE_NOTES.md', 'THIRD_PARTY_NOTICES.md', '使用说明.txt', '启动枫叶单词.cmd']) fs.copyFileSync(path.join(root, file), path.join(dest, file));
   for (const dir of ['public', 'scripts', 'tests', 'node_modules']) fs.cpSync(path.join(root, dir), path.join(dest, dir), {recursive:true});
   fs.mkdirSync(path.join(dest, 'data'), {recursive:true});
   for (const file of ['course-4.json', 'unit-154.json']) fs.copyFileSync(path.join(root, 'data', file), path.join(dest, 'data', file));

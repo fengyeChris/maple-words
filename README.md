@@ -6,9 +6,9 @@
 
 ## 下载即用
 
-**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.2.0-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
+**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.2.1-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
 
-下载 `MapleWords-v1.2.0-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
+下载 `MapleWords-v1.2.1-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
 
 适用于 Windows 10 / 11 的 x64 电脑。发布版包含运行环境、6本词书、空白学习记录和词库来源；不含个人账号或学习记录。
 
@@ -61,7 +61,9 @@ ECDICT五书为此前已安装内容，本轮不再扩展。它们按标签整�
 - data/state.json：本地学习记录、重点词标记与本地账户。
 - 浏览器localStorage：当前本地资料编号、设置。
 
-备份时先停止服务，再复制完整data目录；若data目录还有SQLite的-wal/-shm文件，一并保留。复制到新电脑时也使用完整文件夹。更换浏览器需重新登录同一本地账户；匿名资料编号保存在原浏览器中。
+未登录时，连接同一个本地服务的普通浏览器、Codex 内置浏览器共用本机学习记录；另一窗口已有页面需刷新才能看到更新。v1.2.1 首次启动会自动备份并合并旧版各浏览器的匿名记录：已学词条去重合并，保留任一记录中的星标、模糊和不认识标记，其他进度信息取最新记录。原始记录保存在 data/backups，之后启动不再重复合并。注册账户仍各自独立，在另一浏览器登录同一账户即可使用该账户记录。不同电脑或不同软件副本的数据各自保存。
+
+备份时先停止服务，再复制完整data目录；若data目录还有SQLite的-wal/-shm文件，一并保留。升级时先将旧 data 完整复制到新版本目录再启动，不要用新包的空白 state.json 覆盖旧记录。
 
 ## 词书包格式
 

@@ -1,6 +1,6 @@
 {
   "name": "maple-words",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "description": "枫叶单词 · 支持离线词库、四种练习与重点词复习的英语学习软件",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "node server.js",
     "import": "node scripts/import-pack.js",
     "package": "node scripts/package.js",
-    "test": "node tests/smoke.js"
+    "test": "node tests/smoke.js && node tests/profile-migration.js"
   },
   "dependencies": {
     "better-sqlite3": "^11.10.0"

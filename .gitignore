@@ -3,6 +3,8 @@ node_modules/
 /outputs/
 /work/
 data/state.json
+data/backups/
+data/state.json.*.tmp
 data/*-wal
 data/*-shm
 .env
