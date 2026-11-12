@@ -33,7 +33,7 @@ body.learning-page {
 .learning-page .flash-position { margin-left: auto; color: #65716a; font-size: 12px; }
 .learning-page .flash-stage { position: relative; }
 .learning-page .study-card { background: #fff; border: 1px solid #dce3de; border-radius: 5px; box-shadow: var(--shadow); }
-.learning-page .flash-card { height: 304px; padding: 43px 22px 14px; display: flex; flex-direction: column; text-align: left; }
+.learning-page .flash-card { height: 340px; padding: 43px 22px 14px; display: flex; flex-direction: column; text-align: left; }
 .learning-page .favorite-mark { position: absolute; right: 14px; top: 10px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid transparent; border-radius: 3px; padding: 3px 8px; background: #edf4f0; color: #3d7a65; font-size: 12px; min-height: 26px; }
 .learning-page .favorite-mark .ui-icon { width: 13px; height: 13px; }
 .learning-page .favorite-mark.active { border-color: #83ad99; background: #deede3; }
@@ -48,6 +48,12 @@ body.learning-page {
 .learning-page .flash-definition { margin: 0 0 14px; font-size: 15px; line-height: 1.75; overflow-wrap: anywhere; }
 .learning-page .flash-definition .word-phonetic { font-size: inherit; color: #44594d; }
 .learning-page .flash-meaning { white-space: pre-line; }
+.word-phonetic { font-family: "Segoe UI", "Arial Unicode MS", "Noto Sans", sans-serif; }
+.word-synonyms { margin: 12px 0 14px; font-size: 14px; line-height: 1.8; color: #65716a; overflow-wrap: anywhere; }
+.word-synonyms a { color: #347a68; text-decoration: none; }
+.word-synonyms a:hover { text-decoration: underline; }
+.word-synonyms a:focus-visible { outline: 2px solid #43836f; outline-offset: 2px; }
+.synonym-separator { color: #829087; }
 .learning-page .flash-example { margin: 12px 0 6px; font-size: 16px; line-height: 1.7; font-style: italic; color: #53685d; overflow-wrap: anywhere; }
 .learning-page .flash-example strong { color: #347c65; }
 .learning-page .flash-translation { font-size: 14px; line-height: 1.7; margin: 4px 0 12px; color: #65716a; overflow-wrap: anywhere; }

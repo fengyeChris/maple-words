@@ -5,7 +5,7 @@
   "commit": "3992bcb94c800a2fd38a9fd6ff95b2353e755363",
   "archive_sha256": "fe12c5a331510e86da4a187a829d9d72e2785588e60ce45d830f349c30fc3866",
   "archive_bytes": 1111633,
-  "package_sha256": "5579c5e3c6e5dce0042c85f6813e2bf8cd1125b5f966336bb0b7fddf6f6c6e5b",
+  "package_sha256": "fb6e132079e2d39cb157790c935b890d7d90510a8488f8aa5df57b7d794990c7",
   "total_words": 2078,
   "unique_normalized_words": 2078,
   "duplicates": [],
@@ -64,6 +64,14 @@
   },
   "meaning_present": 2078,
   "phonetic_present": 2042,
+  "synonyms_present": 1775,
+  "synonyms_source": {
+    "source": "Princeton WordNet 3.0",
+    "source_url": "https://raw.githubusercontent.com/nltk/nltk_data/96f9b3252457a2b97e52aec64c3dfceeb5c312d5/packages/corpora/wordnet.zip",
+    "commit": "96f9b3252457a2b97e52aec64c3dfceeb5c312d5",
+    "archive_sha256": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59",
+    "selection": "First sense with synonyms in WordNet index order, matching the displayed part of speech; up to three terms. Missing entries remain empty."
+  },
   "bilingual_example_present": 2010,
   "first_word": "trade",
   "last_word": "allowance",

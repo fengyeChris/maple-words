@@ -20,6 +20,7 @@ function addColumn(table, name, definition) {
 for (const name of ['version', 'source_url', 'license']) addColumn('books', name, "TEXT NOT NULL DEFAULT ''");
 addColumn('words', 'external_key', "TEXT NOT NULL DEFAULT ''");
 addColumn('words', 'order_index', 'INTEGER NOT NULL DEFAULT 0');
+addColumn('words', 'synonyms_json', "TEXT NOT NULL DEFAULT '[]'");
 db.exec('CREATE TABLE IF NOT EXISTS id_counters(kind TEXT PRIMARY KEY,last_id INTEGER NOT NULL)');
 function nextId(table) {
   const last=db.prepare('SELECT last_id FROM id_counters WHERE kind=?').get(table)?.last_id || 0;
@@ -59,6 +60,13 @@ function validatePack(pack) {
       if (wordKeys.has(result.key)) throw new Error('单元 '+key+' 的词条 key 重复'); wordKeys.add(result.key);
       if (w.distractors != null && (!Array.isArray(w.distractors) || w.distractors.length > 10)) throw new Error('干扰项格式错误');
       result.distractors = (w.distractors || []).map(s => textField(s, 'distractor', 12000, true));
+      if (w.synonyms != null && (!Array.isArray(w.synonyms) || w.synonyms.length > 30)) throw new Error('近义词格式错误');
+      const synonymKeys = new Set([normalizedWord]);
+      result.synonyms = (w.synonyms || []).map(s => textField(s, 'synonym', 200, true)).filter(s => {
+        const key = s.normalize('NFKC').toLowerCase().replace(/\s+/g, ' ').trim();
+        if (synonymKeys.has(key)) return false;
+        synonymKeys.add(key); return true;
+      });
       return result;
     });
     total += words.length;
@@ -87,7 +95,7 @@ const importTransaction = db.transaction(({book, units, total}) => {
       const w=u.words[j]; let wid=oldMap.get(w.key);
       if (!wid) {wid=nextId('words');db.prepare('INSERT INTO words(id,unit_id,word) VALUES(?,?,?)').run(wid,ur.id,w.word);}
       keptWords.add(wid);
-      db.prepare('UPDATE words SET external_key=@key,word=@word,meaning=@meaning,phonetic=@phonetic,pos=@pos,example_en=@example_en,example_cn=@example_cn,distractors_json=@distractors_json,order_index=@order_index,source=@source,updated_at=CURRENT_TIMESTAMP WHERE id=@id').run({...w,distractors_json:JSON.stringify(w.distractors),order_index:j,source:book.source,id:wid});
+      db.prepare('UPDATE words SET external_key=@key,word=@word,meaning=@meaning,phonetic=@phonetic,pos=@pos,example_en=@example_en,example_cn=@example_cn,distractors_json=@distractors_json,synonyms_json=@synonyms_json,order_index=@order_index,source=@source,updated_at=CURRENT_TIMESTAMP WHERE id=@id').run({...w,distractors_json:JSON.stringify(w.distractors),synonyms_json:JSON.stringify(w.synonyms),order_index:j,source:book.source,id:wid});
     }
     for (const w of oldWords) if (!keptWords.has(w.id)) db.prepare('DELETE FROM words WHERE id=?').run(w.id);
     start+=u.words.length;
@@ -98,8 +106,8 @@ const importTransaction = db.transaction(({book, units, total}) => {
 function importPack(pack) { return importTransaction(validatePack(pack)); }
 function mapWord(row) {
   if (!row) return null;
-  const {distractors_json, ...rest}=row;
-  return {...rest,distractors:JSON.parse(distractors_json || '[]')};
+  const {distractors_json, synonyms_json, ...rest}=row;
+  return {...rest,distractors:JSON.parse(distractors_json || '[]'),synonyms:JSON.parse(synonyms_json || '[]')};
 }
 function getUnits(id) { return db.prepare('SELECT * FROM units WHERE book_id=? ORDER BY order_index').all(Number(id)).map(u=>({...u,membership_locked:false})); }
 function getCourses() { return db.prepare('SELECT * FROM books ORDER BY sort_order,id').all().map(b=>({...b,units:getUnits(b.id)})); }
@@ -126,5 +134,25 @@ if (!db.prepare('SELECT COUNT(*) n FROM books').get().n && !process.env.CONTENT_
   })();
   const corePack = [path.join(__dirname,'resources','cet6-core','cet6-core.json'),path.join(__dirname,'outputs','resources','cet6-core','cet6-core.json')].find(file=>fs.existsSync(file));
   if(corePack) importPack(JSON.parse(fs.readFileSync(corePack,'utf8')));
+}
+// Upgrade the bundled core book in place. IDs and learning records never change.
+const lexicalSupplement = [path.join(__dirname,'resources','cet6-core','wordnet-synonyms.json'),path.join(__dirname,'outputs','resources','cet6-core','wordnet-synonyms.json')].find(file=>fs.existsSync(file));
+if (lexicalSupplement) {
+  db.exec('CREATE TABLE IF NOT EXISTS content_migrations(key TEXT PRIMARY KEY, applied_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)');
+  const migrationKey = 'cet6-wordnet3-v1';
+  const core = db.prepare("SELECT id FROM books WHERE key='original-cet6-preview' AND source IN ('beidanci365-cache+kajweb-CET6_2','legacy-json')").get();
+  if (core && !db.prepare('SELECT 1 FROM content_migrations WHERE key=?').get(migrationKey)) {
+    const supplement = JSON.parse(fs.readFileSync(lexicalSupplement,'utf8'));
+    if (supplement.schema !== 'word-relations/v1' || supplement.source !== 'Princeton WordNet 3.0') throw new Error('内置近义词补充包格式错误');
+    db.transaction(()=>{
+      const rows = db.prepare("SELECT w.id,w.word,w.pos FROM words w JOIN units u ON u.id=w.unit_id WHERE u.book_id=? AND w.synonyms_json='[]'").all(core.id);
+      const update = db.prepare('UPDATE words SET synonyms_json=? WHERE id=?');
+      for (const row of rows) {
+        const entry = supplement.words[row.word.toLowerCase()];
+        if (entry && row.pos.replace(/\./g,'').trim() === entry.pos.replace(/\./g,'').trim() && Array.isArray(entry.synonyms)) update.run(JSON.stringify(entry.synonyms),row.id);
+      }
+      db.prepare('INSERT INTO content_migrations(key) VALUES(?)').run(migrationKey);
+    })();
+  }
 }
 module.exports={dbPath,db,getCourses,getUnits,getWords,getWordById,searchWords,importPack,exportPack,validatePack};

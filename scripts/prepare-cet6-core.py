@@ -13,7 +13,7 @@ import unicodedata
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / 'outputs/resources/cet6-core'
+DEST = ROOT / ('resources/cet6-core' if (ROOT / 'resources/cet6-core').exists() else 'outputs/resources/cet6-core')
 COMMIT = '3992bcb94c800a2fd38a9fd6ff95b2353e755363'
 SOURCE_URL = f'https://raw.githubusercontent.com/kajweb/dict/{COMMIT}/book/1524052554766_CET6_2.zip'
 EXPECTED_SHA = 'fe12c5a331510e86da4a187a829d9d72e2785588e60ce45d830f349c30fc3866'
@@ -57,6 +57,14 @@ def main():
     if any(row['bookId'] != 'CET6_2' for row in rows):
         raise ValueError('Mixed source books')
     words = [project(row) for row in rows]
+    relations = json.loads((DEST / 'wordnet-synonyms.json').read_text(encoding='utf-8'))
+    if relations['source'] != 'Princeton WordNet 3.0' or len(relations['words']) != 2078:
+        raise ValueError('Expected the verified offline WordNet 3.0 supplement')
+    for word in words:
+        entry = relations['words'][word['key']]
+        if entry['pos'] != word['pos']:
+            raise ValueError('WordNet part of speech mismatch: ' + word['word'])
+        word['synonyms'] = entry['synonyms']
     seen = {}
     for rank, word in enumerate(words, 1):
         key = normalize(word['word'])
@@ -87,11 +95,11 @@ def main():
             # Existing key intentionally retained so installing updates course 4.
             'key': 'original-cet6-preview',
             'title': '英语六级核心词汇',
-            'version': 'CET6_2-2078-2026-11-12',
+            'version': 'CET6_2-2078-WordNet3-2026-11-12',
             'description': '2078个不重复词条，42单元；原缓存前400词保留，后1678词由公开CET6_2词库补齐。前400词的顺序、释义和词性已与原站缓存核对一致。',
             'source': 'beidanci365-cache+kajweb-CET6_2',
             'source_url': SOURCE_URL,
-            'license': '前400词来自原项目缓存；其余来自kajweb/dict公开词库，仓库未见明确内容许可证。',
+            'license': '前400词来自原项目缓存；其余来自kajweb/dict公开词库，仓库未见明确内容许可证。近义词来自Princeton WordNet 3.0，见WordNet-LICENSE.txt。',
         },
         'units': units,
     }
@@ -101,9 +109,9 @@ def main():
     csv_file = DEST / '英语六级核心词汇-2078词.csv'
     with csv_file.open('w', encoding='utf-8-sig', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['序号', '单元', '单词', '词性', '释义', '音标', '英文例句', '中文例句'])
+        writer.writerow(['序号', '单元', '单词', '词性', '释义', '音标', '英文例句', '中文例句', '近义词'])
         for index, word in enumerate(words, 1):
-            writer.writerow([index, (index - 1) // 50 + 1, word['word'], word['pos'], word['meaning'], word['phonetic'], word['example_en'], word['example_cn']])
+            writer.writerow([index, (index - 1) // 50 + 1, word['word'], word['pos'], word['meaning'], word['phonetic'], word['example_en'], word['example_cn'], ' · '.join(word['synonyms'])])
     report = {
         'checked_at': '2026-11-12', 'book_title': pack['book']['title'],
         'source_url': SOURCE_URL, 'commit': COMMIT, 'archive_sha256': digest,
@@ -115,6 +123,8 @@ def main():
         'cache_comparison': {field: len(cached) for field in compared_fields},
         'meaning_present': sum(bool(w['meaning']) for w in words),
         'phonetic_present': sum(bool(w['phonetic']) for w in words),
+        'synonyms_present': sum(bool(w['synonyms']) for w in words),
+        'synonyms_source': {key: relations[key] for key in ('source', 'source_url', 'commit', 'archive_sha256', 'selection')},
         'bilingual_example_present': sum(bool(w['example_en'] and w['example_cn']) for w in words),
         'first_word': words[0]['word'], 'last_word': words[-1]['word'],
         'remote_limit': 'Original course 4 unit 162 returns HTTP 403 membership_required. Later original units were not retrieved.',
@@ -133,6 +143,11 @@ def main():
         f'公开源固定提交：{COMMIT}\n\n下载地址：{SOURCE_URL}\n\nSHA-256：{digest}\n\n'
         '文件：cet6-core.json 可导入本地软件；CSV可人工核对；CET6_2.zip是完整上游源档；verification.json是数量、去重和一致性报告。\n\n'
         '上游仓库未见明确的词库内容许可证，保留来源记录，未认定为开放授权素材。\n', encoding='utf-8')
+    with (DEST / '来源说明.md').open('a', encoding='utf-8') as file:
+        file.write('\n近义词来自 Princeton WordNet 3.0，按当前词性选择索引中首个含近义词的义项，最多显示3个。'
+                   f"{report['synonyms_present']}词收录近义词，缺失时不显示，不使用同根词替代。"
+                   '这不表示所有近义词在任何上下文都能互换。完整许可见 WordNet-LICENSE.txt；'
+                   'wordnet-synonyms.json 记录来源、固定提交、源档 SHA-256 和提取规则。\n')
     print(json.dumps({key: report[key] for key in ('total_words', 'unique_normalized_words', 'units', 'cached_words_preserved', 'recovered_words', 'meaning_present', 'phonetic_present', 'bilingual_example_present')}, ensure_ascii=True))
 
 

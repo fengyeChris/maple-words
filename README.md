@@ -6,9 +6,9 @@
 
 ## 下载即用
 
-**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.3.0-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
+**[下载 Windows 完整包](https://github.com/fengyeChris/maple-words/releases/latest/download/MapleWords-v1.3.1-windows-x64.zip)** · [版本发布页](https://github.com/fengyeChris/maple-words/releases/latest)
 
-下载 `MapleWords-v1.3.0-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
+下载 `MapleWords-v1.3.1-windows-x64.zip` 完整包。GitHub 自动生成的 Source code 仅包含开发源码，需要另装依赖。
 
 适用于 Windows 10 / 11 的 x64 电脑。发布版包含运行环境、6本词书、空白学习记录和词库来源；不含个人账号或学习记录。
 
@@ -44,6 +44,7 @@ ECDICT五书为此前已安装内容，本轮不再扩展。它们按标签整�
 - 词书卡片、真实词数、单元列表与按已学词条计算的进度。
 - 英文选义、单词快过、写出英文、左右配对四种练习。
 - 学习页采用灰绿底色、白色细边卡片和衬线字体；单词快过显示左对齐单词、释义与例句，右上角星标、底部模糊 / 不认识、两侧翻词箭头和独立快捷键区。窄屏自动适配，长释义在卡片内滚动。
+- 音标统一使用 `/…/` 格式，释义前显示词性；单词快过和单词详情显示可点击查询的近义词。六级核心 1775 个词收录 WordNet 3.0 近义词，按当前词性取首个含近义词的义项（最多3个），缺失不编造，学习时无需联网。近义词不保证在所有语境下互换。
 - 单词快过默认显示释义，按空格或「翻转」隐藏 / 显示。支持重来、乱序 / 恢复原顺序和进入下一单元；重来只重置本轮计分，保留累计进度和标记。星标、模糊、不认识按钮只切换当前词标记，「认识并继续」记录答对并进入下一词。
 - 学习快捷键：单词快过用 ←/→ 浏览、空格翻转、R 重读、1 模糊 / 2 不认识 / 3 星标；复习「模糊」「不认识」时 1 为认识。写出英文用空格逐个字母提示、Enter 提交 / 答题后下一词；英文选义答题后 Enter 下一词。每页显示适用键位，重点词练习同步支持。
 - 快过浏览会保存已看词条，不清除原标记；前后回看同一词不会重复计分。快捷键避开输入法选字、其他输入框、组合键和长按连发，保存期间阻止重复提交，结束练习后解绑。原站对对碰未发现自定义快捷键，保留鼠标 / 触屏配对与标记。
